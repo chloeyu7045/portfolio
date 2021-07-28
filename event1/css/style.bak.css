@@ -1,0 +1,472 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;	
+}
+#panel{
+	display:none;	
+}
+a img{
+	border:none;	
+}
+#preload{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+	/*background-color:#0D0A03;*/
+	background-image:url(../images/loading.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+	
+	/*display:none;*/
+}
+.page{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	width:100%;
+	height:1000px;	
+}
+#preload-img-container{
+	position:absolute;
+	width:0;
+	height:0;
+	overflow:hidden;	
+}
+#preload-box{
+	position:relative;
+	/*margin:257px auto 0 auto;*/
+	margin:315px auto 0 auto;
+	width:375px;
+	height:30px;
+	color:#e0cf97;
+	text-align:right;
+	
+}
+#preload-box div.txt{
+	position:relative;
+	font-size:12px;	
+	font-weight:bold;
+	text-align:right;
+}
+#preload-box div.txt span{
+	font-size:25px;	
+}
+#preload-box div.bar{
+	position:relative;
+	height:10px;
+	display:none;
+}
+#preload-box div.bar-in{
+	position:relative;
+	background-color:#FC9F36;
+	width:0%;
+	height:5px;
+}
+
+#main{
+	
+	background-image:url(../images/bg.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+	
+	display:none;
+}
+#bg2{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	width:100%;
+	height:640px;
+	background-image:url(../images/bg2.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+	display:none;
+}
+#menu{
+	position:absolute;
+	left:0;
+	top:23px;
+	right:0;
+	width:100%;
+	height:45px;
+}
+#menu-in{
+	position:relative;
+	width:1024px;
+	height:45px;
+	margin:0 auto;
+}
+@media screen and (max-width: 1024px) {
+   #menu-in{
+		width:100%;
+	}
+}
+#menu-in > a{
+	position:relative;
+	display:block;
+	width:150px;
+	height:45px;
+	
+	background-image:url(../images/menu.png);
+	background-repeat:no-repeat;
+	
+}
+#menu-in > a.float-left{
+	float:left;
+}
+#menu-in > a.float-right{
+	float:right;
+}
+#menu-in > a#m1{
+	background-position:left top;
+}
+#menu-in > a#m2{
+	background-position:-150px top;
+}
+#menu-in > a#m3{
+	background-position:right top;
+}
+#menu-in > a#m4{
+	background-position:-724px top;
+}
+
+#menu-in > a:hover#m1{
+	background-position:left bottom;
+}
+#menu-in > a:hover#m2{
+	background-position:-150px bottom;
+}
+#menu-in > a:hover#m3{
+	background-position:right bottom;
+}
+#menu-in > a:hover#m4{
+	background-position:-724px bottom;
+}
+
+/*遊戲選單*/
+#game{
+	position:absolute;
+	left:0;
+	top:341px;
+	right:0;
+	width:100%;
+	height:347px;
+}
+#game-in{
+	position:relative;
+	width:835px;
+	height:347px;
+	margin:0 auto;
+}
+#game-in > a{
+	position:relative;
+	display:block;
+	
+	height:347px;
+	float:left;
+	background-image:url(../images/character.png);
+	background-repeat:no-repeat;
+	display:none;
+}
+#game-in > a#g1{
+	width:238px;
+	background-position:left top;
+}
+#game-in > a#g2{
+	width:165px;
+	background-position:-238px top;
+}
+#game-in > a#g3{
+	width:168px;
+	margin-left:15px;
+	background-position:-418px top;
+}
+#game-in > a#g4{
+	width:183px;
+	background-position:-600px top;
+}
+
+
+
+#airplane{
+	position:absolute;
+	left:35%;/*355, 18.4%*/
+	top:250px;/*162px*/
+	
+	opacity:0;
+	-moz-opacity:0;
+	-khtml-opacity: 0; 
+	filter:alpha(opacity=0);
+}
+/*
+@media screen and (max-width: 1024px) {
+  #airplane{
+		left:35%;
+	}
+}
+*/
+#logo{
+	position:absolute;
+	right:17px;
+	top:86px;
+}
+#label{
+	position:absolute;
+	right:5px;/*28*/
+	top:706px;
+	
+	width:615px;
+	height:103px;
+	
+	background-image:url(../images/label.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+#mark{
+	position:absolute;
+	top:-52px;/*-32px*/
+	
+	width:421px;
+	height:286px;
+	
+	opacity:0;
+	-moz-opacity:0;
+	-khtml-opacity: 0; 
+	filter:alpha(opacity=0);
+	
+	background-image:url(../images/mark.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#title{
+	position:absolute;
+	top:234px;/*254px*/
+	width:419px;
+	height:63px;
+	
+	opacity:0;
+	-moz-opacity:0;
+	-khtml-opacity: 0; 
+	filter:alpha(opacity=0);
+	
+	background-image:url(../images/title.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+#popup-bg{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	width:100%;
+	height:1000px;
+	background-color:rgba(0%, 0%, 0%, 0.5);
+	/*
+	background-image:url(../images/popup-bg.jpg);
+	background-position:center 674px;
+	background-repeat:no-repeat;
+	*/
+	display:none;
+}
+
+
+
+#popup{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	width:100%;
+	height:1000px;
+	/*
+	background-color:rgba(0%, 0%, 0%, 0.5);
+	*/
+	
+	background-image:url(../images/popup-bg.jpg);
+	background-position:center 674px;
+	background-repeat:no-repeat;
+	
+	display:none;
+}
+#popup-in{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	width:100%;
+	height:1000px;
+	background-image:url(../images/popup-bg2.png);
+	background-position:center 188px;
+	background-repeat:no-repeat;
+}
+#popup-close{
+	position:absolute;
+	top:180px;
+	width:61px;
+	height:60px;
+	background-image:url(../images/btn-close_game.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	
+	z-index:1;
+}
+#fb-tag-note{
+	position:absolute;
+	top:360px;
+	width:176px;
+	height:145px;
+	background-image:url(../images/tag.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	display:none;
+}
+#popup2-bg{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	width:100%;
+	height:1000px;
+	background-color:rgba(0%, 0%, 0%, 0.5);
+	display:none;
+	z-index:2;
+}
+#popup2{
+	position:absolute;
+	top:298px;
+	width:275px;
+	height:216px;
+	background-image:url(../images/game-lose.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	display:none;
+	z-index:3;
+}
+a.popup2-close, a.popup3-close, a.popup4-close, a.popup5-close{
+	position:absolute;
+	display:block;
+	top:-20px;
+	right:-20px;
+	width:54px;
+	height:54px;
+	background-image:url(../images/btn-close.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+a#popup2-replay{
+	position:absolute;
+	display:block;
+	top:111px;
+	left:64px;
+	width:65px;
+	height:65px;
+}
+a#popup2-other{
+	position:absolute;
+	display:block;
+	top:111px;
+	left:147px;
+	width:65px;
+	height:65px;
+}
+
+#popup3{
+	position:absolute;
+	top:217px;
+	width:705px;
+	height:410px;
+	background-image:url(../images/form.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+	display:none;
+	z-index:3;
+}
+#popup4{
+	position:absolute;
+	top:50px;/*216*/
+	width:745px;
+	height:743px;
+	background-image:url(../images/act.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+	display:none;
+	z-index:3;
+}
+#popup5{
+	position:absolute;
+	top:216px;
+	width:745px;
+	height:323px;
+	background-image:url(../images/stroke.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+	display:none;
+	z-index:3;
+}
+
+#popup5 > div{
+	position:absolute;
+	top:128px;
+	left:88px;
+	height:65px;
+}
+#popup5 > div > a{
+	position:relative;
+	display:block;
+	float:left;
+	width:65px;
+	height:65px;
+	margin-right:18px;
+}
+#mark:hover{
+	cursor:pointer;
+}
+
+#popup3 > div{
+	position:absolute;
+	left:195px;
+	top:80px;
+}
+#popup3 > div input{
+	position:relative;
+	width:425px;
+	height:30px;
+	line-height:30px;
+	margin-bottom:12px;
+	font-size:18px;
+}
+#form-chk{
+	position:absolute;
+	left:85px;
+	top:280px;
+}
+#form-submit{
+	position:absolute;
+	width:155px;
+	height:35px;
+	left:272px;
+	top:347px;
+	border:none;
+	
+	background-image:url(../images/btn-submit.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	
+}
+
+#form-submit:hover{
+	cursor:pointer;
+}
+#popup3 input.request{
+	background-color:#FCF;
+}

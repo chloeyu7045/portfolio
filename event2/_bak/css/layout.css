@@ -1,0 +1,109 @@
+/*reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+	position:relative;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img {
+	border:0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol, ul {
+	list-style:none;
+}
+caption, th {
+	text-align:left;
+}
+/*h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}*/
+q:before, q:after {
+	content:'';
+}
+abbr, acronym {
+	border:0;
+}
+body {
+	margin: 0;
+}
+
+
+.index {
+	width:100%;
+	height:955px;
+	margin:0 auto;
+	background:url(../images/bg_index.jpg) no-repeat center top;
+
+}
+
+.vivid {
+	width:100%;
+	height:955px;
+	margin:0 auto;
+	background:url(../images/bg_vivid.jpg) no-repeat center top;
+
+}
+
+.rules {
+	width:100%;
+	height:955px;
+	margin:0 auto;
+	background:url(../images/bg_rules.jpg) no-repeat center top;
+
+}
+
+.game1{
+	width:100%;
+	height:955px;
+	margin:0 auto;
+	background:url(../images/bg_game1.jpg) no-repeat center top;
+
+}
+
+.game2{
+	width:100%;
+	height:955px;
+	margin:0 auto;
+	background:url(../images/bg_game2.jpg) no-repeat center top;
+
+}
+
+
+.main {
+	width:1280px;
+	height:955px;
+	margin:0 auto;
+	position:relative;
+}
+
+.btnci{position:absolute;  top:75px; left:130px;}
+
+.btn1{ position:absolute; width:320px; height:65px; top:0; left:125px;}
+.btn2{ position:absolute; width:110px; height:65px; top:0; left:672px;}
+.btn3{
+	position:absolute;
+	width:127px;
+	height:65px;
+	top:-5px;
+	left:785px;
+}
+.btngame{ position:absolute; width:412px; height:76px; top:713px; left:474px;}
+.btnshow{ position:absolute; width:157px; height:67px; top:497px; left:850px;}
+.btnclose{ position:absolute; width:80px; height:80px; top:203px; left:1030px;}
+
+.btngame2{ position:absolute; width:192px; height:39px; top:767px; left:633px;}
+.btnfb{ position:absolute; width:220px; height:67px; top:278px; left:308px;}
+
+
+
+
+.fb1{ width:970px; height:2975px; background:url(../images/fb1.jpg) no-repeat; position:relative; margin:0 auto;}
+.fbbg{ width:100%; height:auto; background:url(../images/fb_bg.jpg) repeat-x;}
