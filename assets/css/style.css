@@ -363,13 +363,33 @@ p{ line-height: 2.6;  font-size: 1rem!important;}
 
 
   #hero h2 {
+   display: flex;
+   justify-content: center;
+   margin-top: 5rem;
 
+
+}
+
+ #hero h2 a{
+   text-align: center;
+ }
+
+
+
+
+  #hero h2 span{
+   color: #fff;
+   font-size: 1.125rem;
+   
     
 }
 
+
   #hero h2 img{     
     height: 3.6rem;
-    margin: 0 0 0 30%; }
+    margin: 0 0 0 15%;
+   display: block;
+     }
 
 
 #portfolio{
