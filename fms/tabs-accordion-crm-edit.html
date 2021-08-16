@@ -1,0 +1,661 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <title>FMS廠務管理系統</title>
+    <!-- Simple bar CSS -->
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+    <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="css/daterangepicker.css">
+</head>
+</head>
+<body class="vertical  light  ">
+    <div class="wrapper">
+        <nav class="topnav navbar navbar-light bg-white">
+            <button type="button" class="navbar-toggler  p-0 mr-3 collapseSidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand mx-auto  flex-fill " href="./index.html">
+                <img src="assets/images/logo.svg" class="logo">
+                <h1><span>FMS</span>厂务管理系统</h1>
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-muted my-2" href="#" id="modeSwitcher" data-mode="light">
+                        <i class="far fa-lightbulb"></i>
+                    </a>
+                </li>
+                <li class="nav-item nav-notif">
+                    <a class="nav-link text-muted my-2" href="#">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge badge-warning">18</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="avatar avatar-sm mt-2">
+                            <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle">
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="profile">
+                            <p>游圣珮</p>
+                            <p>ChloeYu</p>
+                            <p>全稳生技农业科技</p>
+                            <p>工号 : IT00066</p>
+                            <p>ID: Chloeyu</p>
+                        </div>
+                        <a class="btn-profile w-50" href="#">修改密碼</a>
+                        <a class="btn-profile w-50" href="#">登出</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- 主選單 開始 -->
+        <aside class="sidebar-left border-right shadow" id="leftSidebar" data-simplebar>
+            <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+                <i class="fe fe-x"><span class="sr-only"></span></i>
+            </a>
+            <nav class="vertnav navbar navbar-light">
+                <!-- nav bar -->
+                <div class="w-100 mb-4 d-flex">
+
+                </div>
+                <ul class="navbar-nav flex-fill w-100 mb-2">
+
+                    <li class="nav-item dropdown">
+                        <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link collapsed">
+                            <i class="fas fa-cubes"></i>
+                            <span class="ml-3 item-text">物料清单</span>
+                        </a>
+                        <ul class="list-unstyled w-100 collapse" id="tables">
+                            <li class="nav-item">
+                                <a class="nav-link" href="tabs-accordion.html"><span
+                                        class="ml-1 item-text">备品添加</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="table-datatables.html"><span
+                                        class="ml-1 item-text">备品管理</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#ui-elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-industry"></i>
+                            <span class="ml-3 item-text">厂务管理</span>
+                        </a>
+                        <!-- 設定 -->
+                        <ul class="collapse list-unstyled w-100" id="ui-elements">
+                            <li class="title"><i class="fas fa-cog"></i> 設定</li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="tree-equipment.html"><span
+                                        class="ml-1 item-text">设备管理</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-assets.html"><span
+                                        class="ml-1 item-text">资产管理</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-authority.html"><span
+                                        class="ml-1 item-text">设备管理权限</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">地点顺序管理
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 设备作业  -->
+                        <ul class="collapse list-unstyled w-100" id="ui-elements">
+                            <li class="title"><i class="fas fa-wrench"></i> 设备作业</li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-operation.html"><span
+                                        class="ml-1 item-text">设备作业</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">计画/排班表</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">異常統計回報</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">異常統計分析</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Report -->
+                        <ul class="collapse list-unstyled w-100" id="ui-elements">
+                            <li class="title"><i class="fas fa-chart-bar"></i> Report</li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="chart-monthly-statistics.html"><span
+                                        class="ml-1 item-text">能耗统计</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-repair-form.html"><span
+                                        class="ml-1 item-text">維修統計</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-count.html"><span
+                                        class="ml-1 item-text">猪只数量编辑</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">設備作業提醒</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">巡檢異常通知</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-warehouse"></i>
+                            <span class="ml-3 item-text">仓库管理</span>
+                        </a>
+                        <!-- 资产 -->
+                        <ul class="collapse list-unstyled w-100" id="forms">
+                            <li class="title"><i class="fas fa-archive"></i> 资产</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms-assets.html"><span
+                                        class="ml-1 item-text">固定资产管理</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms-inventory.html"><span
+                                        class="ml-1 item-text">资产盘点</span></a>
+                            </li>
+
+                        </ul>
+                        <!-- 备品库存/其他 -->
+                        <ul class="collapse list-unstyled w-100" id="forms">
+                            <li class="title"><i class="fa fa-barcode" aria-hidden="true"></i> 备品库存/其他
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms.html"><span
+                                        class="ml-1 item-text">备品管理</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="wms-inbound.html"><span
+                                        class="ml-1 item-text">备品入库</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms-record.html"><span
+                                        class="ml-1 item-text">交易纪录管理</span></a>
+                            </li>
+                        </ul>
+                        <!-- Report -->
+                        <ul class="collapse list-unstyled w-100" id="forms">
+                            <li class="title"><i class="fas fa-chart-bar"></i> Report</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms-report.html"><span
+                                        class="ml-1 item-text">管理报表</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#crm" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-user-plus"></i>
+                            <span class="ml-3 item-text">C.R.M</span>
+                        </a>
+                        <ul class="collapse list-unstyled w-100" id="crm">
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-crm.html"><span
+                                        class="ml-1 item-text">养殖场</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">仓库</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#charts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-copy"></i>
+                            <span class="ml-3 item-text">签核管理</span>
+                        </a>
+                        <!-- 设定 -->
+                        <ul class="collapse list-unstyled w-100" id="charts">
+                            <li class="title"><i class="fas fa-cog"></i> 设定</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-substitute.html"><span class="ml-1 item-text">代理人设定</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-form-authority.html"><span class="ml-1 item-text">表单核决权限</span></a>
+                            </li>
+                        </ul>
+                        <!-- 表单 -->
+                        <ul class="collapse list-unstyled w-100" id="charts">
+                            <li class="title"><i class="fa fa-list-ul" aria-hidden="true"></i> 表单</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-form-tracking.html"><span class="ml-1 item-text">表单进度追踪</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" data-toggle="collapse" class="nav-link">
+                            <i class="fas fa-address-book text-white"></i>
+                            <span class="ml-3 item-text">帐号管理</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#set" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-cog"></i>
+                            <span class="ml-3 item-text">设定</span>
+                        </a>
+                        <!-- 群组权限设定 -->
+                        <ul class="collapse list-unstyled w-100" id="set">
+                            <li class="title"><i class="fas fa-users-cog"></i> 群组权限设定</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">群组设定</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">权限设定</span></a>
+                            </li>
+                        </ul>
+                        <!-- 系统设定 -->
+                        <ul class="collapse list-unstyled w-100" id="set">
+                            <li class="title"><i class="fas fa-server"></i> 系统设定</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">系统代码维护</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">多语系设定</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">编辑企业资料</span></a>
+                            </li>
+                        </ul>
+                        <!-- 代码设定 -->
+                        <ul class="collapse list-unstyled w-100" id="set">
+                            <li class="title"><i class="fas fa-file-code"></i> 代码设定</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">代码维护-BOM</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">代码维护-FMS</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">代码维护-FA</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">代码维护-HR</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">工作日设定</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">发送测试信</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </aside>
+        <!-- 主選單 結束 -->
+        <main role="main" class="main-content">
+            <!-- 麵包屑 開始 -->
+            <section>
+                <div class="page-titles">
+                    <div class="col-md-7">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href=""><i class="fas fa-home"></i>　Home</a></li>
+                            <li class="breadcrumb-item"><a href="">C.R.M</a></li>
+                            <li class="breadcrumb-item"><a href="">养殖场</a></li>
+                            <li class="breadcrumb-item active">下营场</li>
+
+                        </ol>
+                    </div>
+                    <div class="">
+                        <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-lg pull-right m-l-10"><i
+                                class="ti-settings text-white"></i></button>
+                    </div>
+                </div>
+            </section>
+            <!-- 麵包屑 結束 -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="row my-3">
+                            <div class="col-md-12">
+                                <!-- 頁籤 開始 -->
+                                <div class="card tab-card">
+                                    <div class="card-body">
+                                        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="AAA-tab" data-toggle="tab" href="#AAA" role="tab" aria-controls="AAA" aria-selected="false"><i
+                                                        class="fas fa-id-badge"></i> 基本資料</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="BBB-tab" data-toggle="tab" href="#BBB" role="tab" aria-controls="BBB" aria-selected="true"><i
+                                                        class="fas fa-users"></i> 联络人資料</a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade  active show" id="AAA" role="tabpanel" aria-labelledby="AAA-tab">
+                                                <div class="form-row">
+                                                    <div class="col-md-3">
+                                                        <label for=""><span class="text-danger">*</span> 类別</label>
+                                                        <select id="" class="form-control  form-control-select">
+                                                            
+                                                            <option value="">养殖场</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for=""><span class="text-danger">*</span> 同类于</label>
+                                                        <select id="" class="form-control  form-control-select">
+                                                            
+                                                            <option value="">养殖场</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <label for=""><span class="text-danger">*</span> 公司全名</label>
+                                                        <input type="" id="" class="form-control form-control-input" value="下营场">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <label for=""><span class="text-danger">*</span> 公司简称</label>
+                                                        <input type="" id="" class="form-control form-control-input" value="下营场">
+                                                    </div>
+
+
+
+                                                    <div class="form-group col-md-3">
+                                                        <label for="">英文名称</label>
+                                                        <input type="" id="" class="form-control form-control-input">
+                                                    </div>
+
+                                                    <div class="form-group col-md-3">
+                                                        <label for="">集团名称</label>
+                                                        <input type="" id="" class="form-control form-control-input">
+                                                    </div>
+
+                                                    <div class="form-group col-md-3">
+                                                        <label for="">纳税人识别号</label>
+                                                        <input type="" id="" class="form-control form-control-input">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <label for="">联络人</label>
+                                                        <input type="" id="" class="form-control form-control-input">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="date-input1">电话</label>
+                                                        <div class="form-group row">
+                                                            <div class="col-7">
+                                                                <input type="" id="" class="form-control form-control-input" value="02-2797-8383">
+                                                            </div>
+                                                            <div class="col-1 p-0">
+                                                                <span class="text-info-light lh-2">分机</span>
+                                                            </div>
+                                                            <div class="col-3 p-0">
+                                                                <input type="" id="" class="form-control form-control-input" value="888">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="">传真</label>
+                                                        <input type="" id="" class="form-control form-control-input">
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="">中文地址</label>
+                                                        <input type="" id="" class="form-control form-control-input">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="">英文地址</label>
+                                                        <input type="" id="" class="form-control form-control-input">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label for="">备注</label>
+                                                        <textarea class="form-control" id="example-textarea" rows="4"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+
+                                                        <div class="custom-control custom-switch">
+                                                            <label>启用</label>
+                                                            <input type="checkbox" class="custom-control-input" id="c5" checked="">
+                                                            <label class="custom-control-label" for="c5"></label>
+                                                            <p class="text-right text-info-light"><span class="text-danger">*</span> 为必填
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="BBB" role="tabpanel" aria-labelledby="BBB-tab">
+                                                <!-- 表格 開始 -->
+                                                <div class="mb-3">
+                                                    <button type="button" class="btn btn-add mb-2 mr-2" data-toggle="modal" data-target="#varyModal"><i
+                                                            class="fas fa-plus"></i> 添加</button>
+
+                                                    <button class="btn btn-delete mb-2" type="submit"><i
+                                                            class="far fa-trash-alt"></i> 刪除</button>
+                                                </div>
+                                                <table class="table datatables table-hover" id="dataTable-1">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>选取</th>
+                                                            <th>姓名</th>
+                                                            <th>职称</th>
+                                                            <th>电话</th>
+                                                            <th>手机</th>
+                                                            <th>E-mail</th>
+                                                            <th>备注</th>
+                                                            <th>操作</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                    <label class="custom-control-label custom-control-label-checkbox" for="customCheck1"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td>马丽民</td>
+                                                            <td>厂务管理员</td>
+                                                            <td>02-2797-8383#888</td>
+                                                            <td>0918-888-888</td>
+                                                            <td>limin.ma@chainwin-agrotech.com.cn</td>
+                                                            <td>备注文字备注文字</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-table-edit btn-md" data-toggle="modal" data-target="#varyModal-2"><i
+                                                                        class="fas fa-pencil-alt"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                                    <label class="custom-control-label custom-control-label-checkbox" for="customCheck2"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td>游圣珮</td>
+                                                            <td>系統管理員</td>
+                                                            <td>02-2797-8383#888</td>
+                                                            <td>0918-888-888</td>
+                                                            <td>chloe.yu@i-chainwin.com</td>
+                                                            <td>备注文字备注文字</td>
+                                                            <td><button type="button" class="btn btn-table-edit btn-md"><i
+                                                                        class="fas fa-pencil-alt"></i></button></td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- 表格 結束 -->
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 頁籤 結束 -->
+                                <!-- 添加联络人 MODAL 開始 -->
+                                <div class="modal fade" id="varyModal" tabindex="-1" role="dialog" aria-labelledby="varyModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="varyModalLabel">添加联络人</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="form-row">
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">姓名</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">职称</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">生日</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">手机</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">电话</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">传真</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="">E-mail</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="">备注</label>
+                                                        <textarea class="form-control" id="example-textarea" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer text-center p-3">
+
+                                                <button class="btn btn-import mb-2 mr-2" type="submit">确认</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 添加联络人 MODAL 結束 -->
+                                 <!-- 管理联络人 MODAL 開始 -->
+                                <div class="modal fade" id="varyModal-2" tabindex="-1" role="dialog" aria-labelledby="varyModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="varyModalLabel">管理联络人</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="form-row">
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">姓名</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="马丽民" required="">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">职称</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="厂务管理员" required="">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">生日</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">手机</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">电话</label>
+                                                        <input type="text" class="form-control form-control-input" id="02-2797-8383#888" value="" required="">
+                                                    </div>
+
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="">传真</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="" required="">
+                                                    </div>
+
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="">E-mail</label>
+                                                        <input type="text" class="form-control form-control-input" id="" value="limin.ma@chainwin-agrotech.com.cn" required="">
+                                                    </div>
+
+                                                    <div class="col-md-12 mb-3">
+                                                        <label for="">备注</label>
+                                                        <textarea class="form-control" id="example-textarea" rows="4">备注文字备注文字备注文字</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer text-center p-3">
+
+                                                <button class="btn btn-import mb-2 mr-2" type="submit">确认</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 管理联络人 MODAL 結束 -->
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-export mb-2 mr-2"  type="submit" onclick="window.open('table-datatables-crm.html','_self');">返回查詢頁</button>
+                                    <button class="btn btn-import mb-2 mr-2" type="submit">确认</button>
+
+                                </div>
+
+
+
+                            </div>
+                            <!-- simple table -->
+                        </div>
+                        <!-- end section -->
+                    </div>
+                    <!-- .col-12 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container-fluid -->
+        </main>
+        <!-- main -->
+    </div>
+    <!-- .wrapper -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.stickOnScroll.js'></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src='js/jquery.dataTables.min.js'></script>
+    <script>
+        $(function() {
+            $('#dataTable-1').dataTable({
+                "columnDefs": [{
+                    "targets": [0, -1, ],
+                    "orderable": false
+                }]
+
+            });
+        });
+    </script>
+    <script src="js/apps.js"></script>
+</body>

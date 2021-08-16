@@ -1,0 +1,171 @@
+/*字型設定*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, "Heiti TC", "Microsoft JhengHei", sans-serif;
+}
+
+.signet {
+    position: absolute;
+    right: 15px;
+    top: 91px;
+    background: url(../assets/images/bg-signet.png);
+    width: 150px;
+    height: 49px;
+    background-size: 100%;
+    text-align: center;
+    transform: rotate(-5deg);
+}
+
+.signet span {
+    font-family: 'Noto Serif SC', 'Noto Serif TC', serif;
+    color: #e70000;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+
+
+/*表格樣式*/
+
+.page {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title,
+.table-infomation-print,
+.table-record,
+.table-sign {
+    width: 100%;
+}
+
+.title {
+    background-color: #409AD6;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2.25rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 1rem 0;
+}
+
+table thead th,
+table tbody td {
+    font-size: 1rem;
+    text-align: left;
+    color: #000!important;
+    padding: 2% 2%;
+    font-weight: 400;
+    border: 1px solid #E2E8F2;
+    text-align: center;
+}
+
+table thead th {
+    background-color: #EBF5FB;
+}
+
+.table-infomation-print-list thead th:nth-child(1) {
+    width: 5%;
+}
+
+.table-infomation-print-list thead th:nth-child(4),
+.table-infomation-print-list thead th:nth-child(7) {
+    width: 10%;
+}
+
+.table-infomation-print-list thead th:nth-child(5) {
+    width: 20%;
+}
+
+.table-infomation-print-signoff thead th:nth-child(1),
+.table-infomation-print-signoff thead th:nth-child(2),
+.table-infomation-print-signoff thead th:nth-child(3),
+.table-infomation-print-signoff thead th:nth-child(4) {
+    width: 12%;
+}
+
+.table-infomation-print-data thead th:nth-child(odd),
+.table-infomation-print-data tbody td:nth-child(odd) {
+    background-color: #EBF5FB;
+}
+
+.table-infomation-print-data thead th:nth-child(2) {
+    background-color: #fff;
+}
+
+
+/*打印按鈕*/
+
+.btn-print {
+    position: absolute;
+    right: -65px;
+    top: 10px;
+    color: #fff;
+    border: 1px solid #409ad6;
+    padding: 0.65rem 0.75rem 0.35rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    border-radius: 4px;
+    transition: all 0.3s linear!important;
+    background: #28b7b9;
+    background: -moz-linear-gradient(45deg, #28b7b9 1%, #409ad6 99%);
+    background: -webkit-linear-gradient(45deg, #28b7b9 1%, #409ad6 99%);
+    background: linear-gradient(45deg, #28b7b9 1%, #409ad6 99%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#28b7b9', endColorstr='#409ad6', GradientType=1);
+}
+
+.btn-print:hover,
+.btn-print:focus {
+    color: #ffffff!important;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+
+/*列印格式設定*/
+
+@page {
+    /* 直向 */
+    size: A4 landscape;
+    /* 紙張大小 */
+    size: A4 portrait;
+    /* 混合使用 */
+}
+
+@media print {
+    .page {
+        margin: 0;
+        box-shadow: 0;
+        width: 20.4cm;
+        margin: 1cm 0.5cm 0.5cm 0.5cm;
+    }
+    .btn-print {
+        display: none;
+    }
+    /* 啟動列印模式時隱藏-列印按鈕 */
+    table thead th,
+    table tbody td {
+        border: 1px solid #999da5;
+        font-size: 0.9rem;
+    }
+    /*預設一開始-背景與背景色為顯示*/
+    .page {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+}

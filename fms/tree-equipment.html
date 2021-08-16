@@ -1,0 +1,1294 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jstree.min.js"></script>
+    <script src="js/jstree.dnd.js"></script>
+    <script src="js/jstree.contextmenu.js"></script>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <title>FMS廠務管理系統</title>
+    <!-- Simple bar CSS -->
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- js tree css -->
+    <link href="css/jquery.contextMenu.css" rel="stylesheet" />
+    <link href="css/jstree.min.css" rel="stylesheet" />
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+    <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+
+</head>
+
+<body class="vertical  light">
+    <div class="wrapper">
+        <nav class="topnav navbar navbar-light bg-white">
+            <button type="button" class="navbar-toggler  p-0 mr-3 collapseSidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand mx-auto  flex-fill " href="./index.html">
+                <img src="assets/images/logo.svg" class="logo">
+                <h1><span>FMS</span>厂务管理系统</h1>
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-muted my-2" href="#" id="modeSwitcher" data-mode="light">
+                        <i class="far fa-lightbulb"></i>
+                    </a>
+                </li>
+                <li class="nav-item nav-notif">
+                    <a class="nav-link text-muted my-2" href="#">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge badge-warning">18</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="avatar avatar-sm mt-2">
+                            <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle">
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="profile">
+                            <p>游圣珮</p>
+                            <p>ChloeYu</p>
+                            <p>全稳生技农业科技</p>
+                            <p>工号 : IT00066</p>
+                            <p>ID: Chloeyu</p>
+                        </div>
+                        <a class="btn-profile w-50" href="#">修改密碼</a>
+                        <a class="btn-profile w-50" href="#">登出</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+               <!-- 主選單 開始 -->
+        <aside class="sidebar-left border-right shadow" id="leftSidebar" data-simplebar>
+            <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+                <i class="fe fe-x"><span class="sr-only"></span></i>
+            </a>
+            <nav class="vertnav navbar navbar-light">
+                <!-- nav bar -->
+                <div class="w-100 mb-4 d-flex">
+
+                </div>
+                <ul class="navbar-nav flex-fill w-100 mb-2">
+
+                    <li class="nav-item dropdown">
+                        <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link collapsed">
+                            <i class="fas fa-cubes"></i>
+                            <span class="ml-3 item-text">物料清单</span>
+                        </a>
+                        <ul class="list-unstyled w-100 collapse" id="tables">
+                            <li class="nav-item">
+                                <a class="nav-link" href="tabs-accordion.html"><span
+                                        class="ml-1 item-text">备品添加</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="table-datatables.html"><span
+                                        class="ml-1 item-text">备品管理</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#ui-elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-industry"></i>
+                            <span class="ml-3 item-text">厂务管理</span>
+                        </a>
+                        <!-- 設定 -->
+                        <ul class="collapse list-unstyled w-100" id="ui-elements">
+                            <li class="title"><i class="fas fa-cog"></i> 設定</li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="tree-equipment.html"><span
+                                        class="ml-1 item-text">设备管理</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-assets.html"><span
+                                        class="ml-1 item-text">资产管理</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-authority.html"><span
+                                        class="ml-1 item-text">设备管理权限</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">地点顺序管理
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 设备作业  -->
+                        <ul class="collapse list-unstyled w-100" id="ui-elements">
+                            <li class="title"><i class="fas fa-wrench"></i> 设备作业</li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-operation.html"><span
+                                        class="ml-1 item-text">设备作业</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">计画/排班表</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">異常統計回報</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">異常統計分析</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Report -->
+                        <ul class="collapse list-unstyled w-100" id="ui-elements">
+                            <li class="title"><i class="fas fa-chart-bar"></i> Report</li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="chart-monthly-statistics.html"><span
+                                        class="ml-1 item-text">能耗统计</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-repair-form.html"><span
+                                        class="ml-1 item-text">維修統計</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href="table-datatables-count.html"><span
+                                        class="ml-1 item-text">猪只数量编辑</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">設備作業提醒</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  dropdown">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">巡檢異常通知</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-warehouse"></i>
+                            <span class="ml-3 item-text">仓库管理</span>
+                        </a>
+                        <!-- 资产 -->
+                        <ul class="collapse list-unstyled w-100" id="forms">
+                            <li class="title"><i class="fas fa-archive"></i> 资产</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms-assets.html"><span class="ml-1 item-text">固定资产管理</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms-inventory.html"><span class="ml-1 item-text">资产盘点</span></a>
+                            </li>
+ 
+                        </ul>
+                        <!-- 备品库存/其他 -->
+                        <ul class="collapse list-unstyled w-100" id="forms">
+                            <li class="title"><i class="fa fa-barcode" aria-hidden="true"></i> 备品库存/其他
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms.html"><span
+                                        class="ml-1 item-text">备品管理</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="wms-inbound.html"><span
+                                        class="ml-1 item-text">备品入库</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms-record.html"><span
+                                        class="ml-1 item-text">交易纪录管理</span></a>
+                            </li>
+                        </ul>
+                        <!-- Report -->
+                        <ul class="collapse list-unstyled w-100" id="forms">
+                            <li class="title"><i class="fas fa-chart-bar"></i> Report</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-wms-report.html"><span class="ml-1 item-text">管理报表</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#crm" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-user-plus"></i>
+                            <span class="ml-3 item-text">C.R.M</span>
+                        </a>
+                        <ul class="collapse list-unstyled w-100" id="crm">
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-crm.html"><span class="ml-1 item-text">养殖场</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">仓库</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#charts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-copy"></i>
+                            <span class="ml-3 item-text">签核管理</span>
+                        </a>
+                        <!-- 设定 -->
+                        <ul class="collapse list-unstyled w-100" id="charts">
+                            <li class="title"><i class="fas fa-cog"></i> 设定</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-substitute.html"><span class="ml-1 item-text">代理人设定</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-form-authority.html"><span class="ml-1 item-text">表单核决权限</span></a>
+                            </li>
+                        </ul>
+                        <!-- 表单 -->
+                        <ul class="collapse list-unstyled w-100" id="charts">
+                            <li class="title"><i class="fa fa-list-ul" aria-hidden="true"></i> 表单</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="table-datatables-form-tracking.html"><span class="ml-1 item-text">表单进度追踪</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" data-toggle="collapse" class="nav-link">
+                            <i class="fas fa-address-book text-white"></i>
+                            <span class="ml-3 item-text">帐号管理</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#set" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                            <i class="fas fa-cog"></i>
+                            <span class="ml-3 item-text">设定</span>
+                        </a>
+                        <!-- 群组权限设定 -->
+                        <ul class="collapse list-unstyled w-100" id="set">
+                            <li class="title"><i class="fas fa-users-cog"></i> 群组权限设定</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">群组设定</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">权限设定</span></a>
+                            </li>
+                        </ul>
+                        <!-- 系统设定 -->
+                        <ul class="collapse list-unstyled w-100" id="set">
+                            <li class="title"><i class="fas fa-server"></i> 系统设定</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">系统代码维护</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">多语系设定</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">编辑企业资料</span></a>
+                            </li>
+                        </ul>
+                        <!-- 代码设定 -->
+                        <ul class="collapse list-unstyled w-100" id="set">
+                            <li class="title"><i class="fas fa-file-code"></i> 代码设定</li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">代码维护-BOM</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">代码维护-FMS</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">代码维护-FA</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">代码维护-HR</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">工作日设定</span></a>
+                                <a class="nav-link pl-3" href=""><span class="ml-1 item-text">发送测试信</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </aside>
+        <!-- 主選單 結束 -->
+        <main role="main" class="main-content">
+            <!-- 麵包屑 開始 -->
+            <section>
+                <div class="page-titles">
+                    <div class="col-md-7">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href=""><i class="fas fa-home"></i>　Home</a></li>
+                            <li class="breadcrumb-item"><a href="">厂务管理</a></li>
+                            <li class="breadcrumb-item"><a href="">設定</a></li>
+                            <li class="breadcrumb-item active">设备管理</li>
+                        </ol>
+                    </div>
+                    <div class="">
+                        <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-lg pull-right m-l-10"><i
+                                class="ti-settings text-white"></i></button>
+                    </div>
+                </div>
+            </section>
+            <!-- 麵包屑 結束 -->
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="row my-3 p-4">
+                            <div class="col-md-12">
+                                <!-- 設備管理 開始 -->
+
+                                <div class="card mb-4 p-4 shadow">
+
+                                    <div id="jstree"></div>
+                                </div>
+                                <!-- 設備管理 開始 -->
+                            </div>
+                            <!-- simple table -->
+                        </div>
+                        <!-- end section -->
+                    </div>
+                    <!-- .col-12 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container-fluid -->
+        </main>
+        <!-- main -->
+    </div>
+    <!-- .wrapper -->
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.stickOnScroll.js'></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/apps.js"></script>
+    <!-- js tree  -->
+    <script type="text/javascript" src="js/ajax_fa.js"></script>
+    <script>
+        var myDic = '';
+        var userLang = 'CHS';
+
+        myDic = [{
+            'ENG': 'Success',
+            'CHT': '成功',
+            'CHS': '成功'
+        }, {
+            'ENG': 'Failed',
+            'CHT': '失敗',
+            'CHS': '失败'
+        }, {
+            'ENG': 'The change is complete, please press F5 to refresh the screen',
+            'CHT': '變更完成, 請按F5更新畫面',
+            'CHS': '变更完成, 请按F5更新画面'
+        }, {
+            'ENG': 'Update Completed',
+            'CHT': '更新完成',
+            'CHS': '更新完成'
+        }, {
+            'ENG': 'OK',
+            'CHT': '好',
+            'CHS': '好'
+        }, {
+            'ENG': 'Edit Device',
+            'CHT': '編輯設備',
+            'CHS': '编辑设备'
+        }, {
+            'ENG': 'Add Device',
+            'CHT': '新增設備',
+            'CHS': '新增设备'
+        }, {
+            'ENG': 'Delete Device',
+            'CHT': '刪除設備',
+            'CHS': '删除设备'
+        }];
+
+
+        function toLang(text, lang) {
+            var afterTranslated = text;
+            for (var i = 0; i < myDic.length; i++) {
+                if ((myDic[i]["ENG"].toUpperCase() == text.toUpperCase()) || (myDic[i]["CHT"].toUpperCase() == text.toUpperCase())) {
+                    afterTranslated = myDic[i][lang.toUpperCase()];
+                    break;
+                }
+            }
+            return afterTranslated;
+        }
+
+        function customMenu(node) {
+            var items = {
+                "createlocation": {
+                    "label": "新增地点",
+                    "icon": "far fa-plus-square",
+                    "action": function(obj) {
+                        fa_callAJAX('N', 62, 'erp_search');
+                    },
+                },
+                "renamelocation": {
+                    "label": "重新命名",
+                    "icon": "far fa-edit",
+                    "action": function(obj) {
+                        openWin(event, '');
+                        setWinSize(300, 40);
+                        fa_callAJAX($("#jstree").jstree().get_selected(true)[0].text, 63, '');
+                        //fa_callAJAX($("#" + $("#jstree").jstree().get_selected(true)[0].text, 63, 'erp_search');
+                    }
+                },
+                "deletelocation": {
+                    "label": "删除地点",
+                    "icon": "far fa-trash-alt",
+                    "action": function(obj) {
+                        fa_callAJAX('N', 64, 'erp_search');
+                    }
+                },
+                "adddevice": {
+                    "label": toLang('新增设备', userLang),
+                    "icon": "far fa-plus-square",
+                    "action": function(obj) {
+                        fa_callAJAX('Y', 62, 'erp_search');
+                    }
+                },
+                "editdevice": {
+                    "label": toLang('编辑设备', userLang),
+                    "icon": "far fa-list-alt",
+                    "action": function(obj) {
+                        //fa_callAJAX($("#jstree").jstree().get_selected(true)[0].id, 66, 'erp_modal');
+                        fms_callAJAX($("#jstree").jstree().get_selected(true)[0].id, 41, 'erp_modal');
+                    }
+                },
+                "deletedevice": {
+                    "label": toLang('删除设备', userLang),
+                    "icon": "far fa-trash-alt",
+                    "action": function(obj) {
+                        fa_callAJAX('Y', 64, 'erp_search');
+                    }
+                },
+                "realtimedata": {
+                    "label": "即時資訊",
+                    "icon": "fa fa-bar-chart",
+                    "action": function(obj) {
+                        fms_callAJAX($("#jstree").jstree().get_selected(true)[0].id, 36, 'new_win');
+                    }
+                }
+            };
+
+            if (node.parent == '#') { //如果是根節點
+                delete items.renamelocation;
+                delete items.deletelocation;
+                delete items.editdevice;
+                delete items.deletedevice;
+                delete items.realtimedata;
+            } else if ($("#jstree").jstree().is_parent(node)) { // 中間節點
+                delete items.deletelocation;
+                delete items.editdevice;
+                delete items.deletedevice;
+                delete items.realtimedata;
+            } else if ($("#jstree").jstree().is_leaf(node)) {
+                if (node.li_attr['description'] == 'device') { // 設備 no link
+                    delete items.createlocation;
+                    delete items.renamelocation;
+                    delete items.deletelocation;
+                    delete items.adddevice;
+                    delete items.realtimedata;
+
+                } else if (node.li_attr['description'] == 'link') { // linked device 斷開設備
+                    delete items.createlocation;
+                    //delete items.renamelocation;
+                    delete items.deletelocation;
+                    delete items.adddevice;
+                    if ((node.li_attr['tagid'] == '0') || (node.li_attr['tagid'] == null))
+                        delete items.realtimedata;
+                    //if (node.text != 'New Device')
+                    //    delete items.deletedevice;
+                } else {
+                    delete items.editdevice;
+                    delete items.deletedevice;
+                    delete items.realtimedata;
+                }
+            }
+
+            return items; //注意要有返回值
+        }
+    </script>
+    <script>
+        $('#jstree').jstree({
+                'core': {
+                    'data': [{
+                        "id": "20956",
+                        "parent": "20955",
+                        "text": "北栋",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": "下营场"
+                        },
+                        "li_attr": {
+                            "description": "location"
+                        }
+                    }, {
+                        "id": "20967",
+                        "parent": "20955",
+                        "text": "中栋",
+                        "state": {
+                            "opened": false
+                        },
+                        "a_attr": {
+                            "fano": "下营场"
+                        },
+                        "li_attr": {
+                            "description": "location"
+                        }
+                    }, {
+                        "id": "20968",
+                        "parent": "20955",
+                        "text": "南栋",
+                        "state": {
+                            "opened": false
+                        },
+                        "a_attr": {
+                            "fano": "下营场"
+                        },
+                        "li_attr": {
+                            "description": "location"
+                        }
+                    }, {
+                        "id": "21010",
+                        "parent": "20955",
+                        "text": "外围设备",
+                        "state": {
+                            "opened": false
+                        },
+                        "a_attr": {
+                            "fano": "下营场"
+                        },
+                        "li_attr": {
+                            "description": "location"
+                        }
+                    }, {
+                        "id": "21037",
+                        "parent": "#",
+                        "text": "母猪场",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "root"
+                        }
+                    }, {
+                        "id": "20955",
+                        "parent": "#",
+                        "text": "下营场",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "root"
+                        }
+                    }, {
+                        "id": "21084",
+                        "parent": "20955",
+                        "text": "抄表作业",
+                        "state": {
+                            "opened": false
+                        },
+                        "a_attr": {
+                            "fano": "下营场"
+                        },
+                        "li_attr": {
+                            "description": "location"
+                        }
+                    }, {
+                        "id": "21142",
+                        "parent": "20956",
+                        "text": "北栋水线系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21143",
+                        "parent": "20956",
+                        "text": "北栋料线系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21144",
+                        "parent": "20956",
+                        "text": "北栋环控系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21029",
+                        "parent": "20956",
+                        "text": "北栋货梯",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21130",
+                        "parent": "20956",
+                        "text": "刮粪系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21183",
+                        "parent": "20956",
+                        "text": "热泵机组",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21137",
+                        "parent": "20967",
+                        "text": "中栋水线系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21135",
+                        "parent": "20967",
+                        "text": "中栋料线系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21139",
+                        "parent": "20967",
+                        "text": "中栋环控系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21028",
+                        "parent": "20967",
+                        "text": "中栋货梯",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21071",
+                        "parent": "20967",
+                        "text": "刮粪系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21184",
+                        "parent": "20967",
+                        "text": "热泵机组",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21129",
+                        "parent": "20968",
+                        "text": "刮粪系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21140",
+                        "parent": "20968",
+                        "text": "南栋水线系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21134",
+                        "parent": "20968",
+                        "text": "南栋料线系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21141",
+                        "parent": "20968",
+                        "text": "南栋环控系统",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21027",
+                        "parent": "20968",
+                        "text": "南栋货梯",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21186",
+                        "parent": "20968",
+                        "text": "热泵机组",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21019",
+                        "parent": "21010",
+                        "text": "1#生活污水井",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21026",
+                        "parent": "21010",
+                        "text": "1#转运站升降台",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21020",
+                        "parent": "21010",
+                        "text": "2#生活污水井",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21025",
+                        "parent": "21010",
+                        "text": "2#转运站升降台",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21022",
+                        "parent": "21010",
+                        "text": "中栋1#提升井",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21021",
+                        "parent": "21010",
+                        "text": "中栋2#提升井",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21016",
+                        "parent": "21010",
+                        "text": "中栋雨水站",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21013",
+                        "parent": "21010",
+                        "text": "水泵房",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21017",
+                        "parent": "21010",
+                        "text": "北栋1#提升井",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21018",
+                        "parent": "21010",
+                        "text": "北栋2#提升井",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21015",
+                        "parent": "21010",
+                        "text": "北栋雨水站",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21030",
+                        "parent": "21010",
+                        "text": "北栋转猪电梯",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21107",
+                        "parent": "21010",
+                        "text": "地磅 (FA# : DB0001)",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": " FA # : DB0001"
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21012",
+                        "parent": "21010",
+                        "text": "消防泵房",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21014",
+                        "parent": "21010",
+                        "text": "高压水泵房",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21093",
+                        "parent": "21010",
+                        "text": "动力中心",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21024",
+                        "parent": "21010",
+                        "text": "发电机",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21097",
+                        "parent": "21084",
+                        "text": "中栋水表1#",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21087",
+                        "parent": "21084",
+                        "text": "中栋水表2#",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21090",
+                        "parent": "21084",
+                        "text": "北栋水表1#",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21089",
+                        "parent": "21084",
+                        "text": "北栋水表2#",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21092",
+                        "parent": "21084",
+                        "text": "生活水表",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21145",
+                        "parent": "21084",
+                        "text": "生产水表",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21086",
+                        "parent": "21084",
+                        "text": "南栋水表1#",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }, {
+                        "id": "21085",
+                        "parent": "21084",
+                        "text": "南栋水表2#",
+                        "state": {
+                            "opened": true
+                        },
+                        "a_attr": {
+                            "fano": ""
+                        },
+                        "li_attr": {
+                            "description": "link",
+                            "tagid": "0"
+                        },
+                        "icon": "fa fa-link"
+                    }],
+                    'check_callback': true,
+                    'multiple': false,
+                    'expand_selected_onload': false
+                },
+                'dnd': {
+                    'is_draggable': function(node) {
+                        if (node[0].li_attr['description'] == 'root')
+                            return false;
+                        else
+                            return true;
+                    }
+                },
+                'plugins': ["dnd", "types", "contextmenu"],
+                'contextmenu': {
+                    "items": customMenu
+                }
+            }).on('loaded.jstree', function() {
+                //$('#jstree').jstree('open_all');
+            })
+            .on('contextmenu', function() {
+                return false;
+            })
+            .bind("move_node.jstree", function(e, data) {
+                if (data.parent == '#') {
+                    alert('根目錄禁止操作');
+
+                    return false;
+                }
+
+            })
+            .bind("rename_node.jstree", function(node, data) {
+
+                return false;
+            })
+            .bind("copy_node.jstree", function(e, data) {
+                if (data.parent == '#') {
+                    alert('根目錄禁止操作');
+                    return false;
+                }
+
+            })
+            .on('hover_node.jstree', function(e, data) {
+                if (data.node.a_attr['fano'] != '')
+                    $("#" + data.node.id).prop('title', data.node.a_attr['fano']);
+            });
+    </script>
+
+
+
+</body>
+
+</html>
