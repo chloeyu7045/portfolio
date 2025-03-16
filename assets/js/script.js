@@ -1005,10 +1005,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// project link
 
+document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const filterClass = params.get("filter");
 
-
-
+    if (filterClass) {
+        // 觸發篩選按鈕
+        const filterButton = document.querySelector(`.filter[data-filter=".${filterClass}"]`);
+        if (filterButton) {
+            filterButton.click(); // 模擬點擊以觸發篩選功能
+        }
+    }
+});
 
 
 
