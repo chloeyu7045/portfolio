@@ -142,6 +142,7 @@
 .contact-section .form-inner .form-group input:focus,
 .contact-section .form-inner .form-group textarea:focus{
   border-color: #fff;
+  background: none;
 }
 
 .contact-section .form-inner .form-group textarea{
