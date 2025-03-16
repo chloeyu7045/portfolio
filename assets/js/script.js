@@ -947,6 +947,62 @@ document.querySelectorAll(".portfolio-block-one .inner-box").forEach(box => {
 
 
 
+// Json
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = urlParams.get("id"); // 取得網址中的 ?id= 值
+
+  if (!projectId) {
+    console.error("Project ID not provided");
+    return;
+  }
+
+  fetch("assets/data/projects.json")
+    .then(response => response.json())
+    .then(data => {
+      const project = data.find(item => item.id === projectId);
+
+      if (!project) {
+        console.error("Project not found");
+        return;
+      }
+
+      // 更新圖片
+      document.querySelector("#projects-visual img").src = project.image;
+
+      // 更新分類連結
+      document.querySelector("#project-link a").href = project.link;
+      document.querySelector("#project-link a").textContent = project.category;
+
+      // 更新標題與內容
+      document.querySelector("#projects-tilte").textContent = project.title;
+      document.querySelector("#projects-content").textContent = project.content;
+
+      // 更新 Project Overview
+      document.querySelector("#project-overview-role").textContent = project.role;
+      document.querySelector("#project-overview-tools").textContent = project.tools;
+      document.querySelector("#project-overview-collaboration").textContent = project.collaboration;
+
+      // 動態載入 Design Process
+      function updateDesignSection(sectionId, images) {
+        const container = document.querySelector(`#${sectionId} .tags-img`);
+        container.innerHTML = images.map(img => `<img src="${img}" loading="lazy">`).join("");
+        if (images.length > 0) {
+          document.getElementById(sectionId).style.display = "block";
+        } else {
+          document.getElementById(sectionId).style.display = "none";
+        }
+      }
+
+      updateDesignSection("design-process-flowchart", project.flowchart);
+      updateDesignSection("design-process-wireframe", project.wireframe);
+      updateDesignSection("design-process-designsystem", project.designsystem);
+      updateDesignSection("design-process-uidesign", project.uidesign);
+      updateDesignSection("design-process-visualdesign", project.visualdesign);
+      updateDesignSection("design-process-frontend-development", project.frontenddevelopment);
+    })
+    .catch(error => console.error("Error loading project data:", error));
+});
 
 
 
