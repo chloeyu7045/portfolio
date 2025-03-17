@@ -947,7 +947,7 @@ document.querySelectorAll(".portfolio-block-one .inner-box").forEach(box => {
 
 
 
-// Json
+// Modify the project loading function in script.js
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const projectId = urlParams.get("id"); // 取得網址中的 ?id= 值
@@ -967,14 +967,15 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
+      // 設置頁面標題
+      document.title = project.pageTitle || project.title;
+
       // 更新圖片
       document.querySelector("#projects-visual img").src = project.image;
 
       // 更新分類連結
       document.querySelector("#project-link a").href = project.link;
       document.querySelector("#project-link a").textContent = project.category;
-
-       // 更新CTA連結
 
       // 更新標題與內容
       document.querySelector("#projects-tilte").textContent = project.title;
@@ -989,7 +990,24 @@ document.addEventListener("DOMContentLoaded", function () {
       function updateDesignSection(sectionId, images) {
         const container = document.querySelector(`#${sectionId} .tags-img`);
         container.innerHTML = images.map(img => `<img src="${img}" loading="lazy">`).join("");
-        if (images.length > 0) {
+        
+        // Handle the frontend development section button
+        if (sectionId === "design-process-frontend-development") {
+          const btnBox = document.querySelector(`#${sectionId} .btn-box`);
+          
+          if (project.websiteUrl && project.websiteUrl.trim() !== "") {
+            // If there's a URL, show the button and update the href
+            btnBox.style.display = "block";
+            btnBox.querySelector("a").href = project.websiteUrl;
+          } else {
+            // If there's no URL, hide the button
+            btnBox.style.display = "none";
+          }
+        }
+        
+        // Show/hide the whole section based on content
+        if ((images && images.length > 0) || 
+            (sectionId === "design-process-frontend-development" && project.websiteUrl)) {
           document.getElementById(sectionId).style.display = "block";
         } else {
           document.getElementById(sectionId).style.display = "none";
@@ -1005,10 +1023,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(error => console.error("Error loading project data:", error));
 });
-
-
-// project link
-
 
 
 

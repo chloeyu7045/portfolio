@@ -107,10 +107,11 @@
   top: -2px;
   right: 0px;
   transition: all 500ms ease;
+  transform: rotate(45deg);
 }
 
 .main-header .btn-box a:hover span:before{
-  transform: rotate(45deg);
+  transform: rotate(135deg);
 }
 
 .main-header .btn-box a:hover{

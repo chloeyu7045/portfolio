@@ -189,6 +189,11 @@
 	margin: 50px 0;
 }
 
+
+.blog-details-content .content-two .text-box .tags-content .btn-box{
+   display: none;
+}
+
 .blog-details-content .content-two .text-box .tags-content span{
 	 display: inline-block;
      padding: 0px 40px;
@@ -542,7 +547,7 @@
 
 
 
-.projects-visual img{}
+.projects-visual img{ width: 100%; }
 
 
 
