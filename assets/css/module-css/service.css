@@ -16,6 +16,7 @@
   font-size: 24px;
   line-height: 48px;
   color: rgba(255, 255, 255, 0.40);
+  margin-bottom: 200px;
 }
 
 .service-section .left-content .inner-box{
@@ -1304,7 +1305,18 @@
   display: none;
 }
 
+@media screen and (max-width:820px) { 
 
+    .service-section .left-content .text-box p{
+      margin-bottom: 60px;
+    }
+
+    .skills-section {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+}
 
 
 

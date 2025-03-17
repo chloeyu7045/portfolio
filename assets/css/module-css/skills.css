@@ -4,6 +4,7 @@
 
 .skills-section{
   position: relative;
+  padding: 120px 0 190px 0;
 }
 
 .skills-section .upper-box{
@@ -248,8 +249,30 @@
 }
 
 
+@media screen and (max-width:991px) { 
 
 
+    .skills-section {
+         padding-top: 0px!important;
+        padding-bottom: 0px!important;
+    }
+
+
+    .skills-section .left-content .inner-box .single-item:nth-child(4){
+
+  border-bottom: 0px solid var(--secondary-color);
+  padding: 37px 100px 7px 150px;
+}
+
+}
+
+
+@media screen and (max-width: 430px) {
+    .skills-section .left-content .inner-box .single-item:nth-child(4) {
+        border-bottom: 0px solid var(--secondary-color);
+        padding: 37px 0px 7px 0px;
+    }
+}
 
 
 
