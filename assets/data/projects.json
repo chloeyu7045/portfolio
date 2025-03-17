@@ -1,40 +1,49 @@
 [
   {
     "id": "officialwebsites-1",
-    "image": "assets/images/portfolio/ow-2/projects-img-1.jpg",
+    "image": "assets/images/portfolio/officialwebsites/1/projects-img-1.jpg",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "EDX Borderless School",
-    "content": "Analyze problems and establish steps to solve problems...",
-    "role": "User Research, UX design, UI design, Prototype design, Frontend Development, Frontend Design",
-    "tools": "HTML5, CSS3, jQuery, Figma, Photoshop, Illustrator, WordPress, Teams Planner",
-    "collaboration": "Project Management Team, Marketing Team, Research and Development Team",
-    "flowchart": ["assets/images/portfolio/ow-2/projects-img-2.jpg"],
-    "wireframe": ["assets/images/portfolio/ow-2/projects-img-3.jpg"],
-    "designsystem": ["assets/images/portfolio/ow-2/projects-img-4.jpg"],
+    "title": "創勢數位科技官網",
+    "content": "創勢數位科技官網 Analyze problems and establish steps to solve problems...",
+    "role": "User Research, UX design, UI design, Frontend Design",
+    "tools": "HTML5, CSS3, jQuery, Figma, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, Research and Development Team",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": [],
     "uidesign": [
-      "assets/images/portfolio/ow-2/projects-img-5.jpg",
-      "assets/images/portfolio/ow-2/projects-img-6.jpg",
-      "assets/images/portfolio/ow-2/projects-img-7.jpg"
+      "assets/images/portfolio/officialwebsites/1/projects-img-2.jpg",
+      "assets/images/portfolio/officialwebsites/1/projects-img-3.jpg",
+      "assets/images/portfolio/officialwebsites/1/projects-img-4.jpg",  
+      "assets/images/portfolio/officialwebsites/1/projects-img-5.jpg",
+      "assets/images/portfolio/officialwebsites/1/projects-img-6.jpg",
+      "assets/images/portfolio/officialwebsites/1/projects-img-7.jpg"
     ],
     "visualdesign": [],
     "frontenddevelopment": []
   },
   {
     "id": "officialwebsites-2",
-    "image": "assets/images/portfolio/ow-3/projects-img-1.jpg",
+    "image": "assets/images/portfolio/officialwebsites/2/projects-img-1.jpg",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "Another Website Project",
-    "content": "A new project showcasing UI/UX development...",
-    "role": "UI design, Frontend Development",
-    "tools": "React, Tailwind, Next.js, Figma",
-    "collaboration": "Marketing Team, Development Team",
-    "flowchart": [],
-    "wireframe": [],
-    "designsystem": [],
-    "uidesign": [],
+    "title": "edx",
+    "content": "edx Analyze problems and establish steps to solve problems...",
+    "role": "UX design, UI design, Prototype design, Frontend Design",
+    "tools": "HTML5, CSS3, jQuery, Figma, Photoshop, Illustrator",
+    "collaboration": "Project Management Team, Research and Development Team",
+    "flowchart": ["assets/images/portfolio/officialwebsites/2/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/officialwebsites/2/projects-img-3.jpg"],
+    "designsystem": ["assets/images/portfolio/officialwebsites/2/projects-img-4.jpg"],
+    "uidesign": [
+      "assets/images/portfolio/officialwebsites/2/projects-img-5.jpg",
+      "assets/images/portfolio/officialwebsites/2/projects-img-6.jpg",
+      "assets/images/portfolio/officialwebsites/2/projects-img-7.jpg"
+    ],
     "visualdesign": [],
     "frontenddevelopment": []
   }
 ]
+
+

@@ -201,6 +201,21 @@
         margin-bottom: 16px;
 }
 
+.blog-details-content .content-two .btn-box span{
+	 border-radius: 50px;
+	 padding: 0 60px!important;
+	 text-transform: capitalize;
+    transition: all 500ms ease;
+
+}
+
+.blog-details-content .content-two .btn-box span:hover{
+	    color: #fff;
+    background: #000;
+    transform: scale(1.15);
+    margin: 0 15px;
+}
+
 
 .blog-details-content .content-two .text-box .tags-content .tags-img{
   

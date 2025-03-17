@@ -974,6 +974,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#project-link a").href = project.link;
       document.querySelector("#project-link a").textContent = project.category;
 
+       // 更新CTA連結
+
       // 更新標題與內容
       document.querySelector("#projects-tilte").textContent = project.title;
       document.querySelector("#projects-content").textContent = project.content;

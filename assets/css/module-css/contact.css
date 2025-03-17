@@ -142,7 +142,12 @@
 .contact-section .form-inner .form-group input:focus,
 .contact-section .form-inner .form-group textarea:focus{
   border-color: #fff;
-  background: none;
+  background: transparent!important;
+}
+
+.contact-section .form-inner .form-group input:-internal-autofill-selected{
+ 
+  background: transparent!important;
 }
 
 .contact-section .form-inner .form-group textarea{
