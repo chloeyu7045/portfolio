@@ -1,13 +1,174 @@
 [
-  
+  {
+    "id": "saasapp-1",
+    "image": "assets/images/portfolio/saasapp/1/projects-img-1.jpg",
+    "category": "SAAS APP",
+    "link": "index.html#portfolio-section",
+    "title": "Bqool Advertising",
+    "pageTitle": "Bqool Advertising For Amazon Ads| My Featured Projects",
+    "content": "BQool Advertising offers intelligent ad management tools to help sellers optimize their ad performance. With AI Bidding, the system automatically adjusts bids based on real-time performance data and Target ACOS to maximize efficiency. Auto-Harvesting streamlines keyword optimization by analyzing daily search term reports, ensuring the most relevant keywords are applied to improve ad results.",
+    "role": "UX design, UI design, Prototype design,Frontend Design",
+    "tools": "HTML5, CSS3, jQuery, Figma,Teams Planner",
+    "collaboration": "Project Management Team, Research and Development Team",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": ["assets/images/portfolio/saasapp/1/projects-img-2.jpg"],
+    "uidesign": [
+      "assets/images/portfolio/saasapp/1/projects-img-3.jpg",
+      "assets/images/portfolio/saasapp/1/projects-img-4.jpg",
+      "assets/images/portfolio/saasapp/1/projects-img-5.jpg"
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "saasapp-2",
+    "image": "assets/images/portfolio/saasapp/2/projects-img-1.jpg",
+    "category": "SAAS APP",
+    "link": "index.html#portfolio-section",
+    "title": "Danshan EScholar",
+    "pageTitle": "Danshan EScholar | My Featured Projects",
+    "content": "Danshan EScholar APP is an innovative online learning platform designed to provide an immersive English learning experience for young students. By interacting with top students from the U.S., children can enhance their English proficiency and broaden their thinking skills.The app offers a wealth of video learning resources, allowing students to learn anytime, anywhere. Additionally, experienced mentors guide and inspire students, fostering a proactive learning attitude and helping them improve their English skills.",
+    "role": "UX design, UI design, Prototype design",
+    "tools": "Figma, Illustrator",
+    "collaboration": "Project Management Team, Research and Development Team",
+    "flowchart": ["assets/images/portfolio/saasapp/2/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/saasapp/2/projects-img-3.jpg"],
+    "designsystem": ["assets/images/portfolio/saasapp/2/projects-img-4.jpg"],
+    "uidesign": [
+      "assets/images/portfolio/saasapp/2/projects-img-5.jpg",
+      "assets/images/portfolio/saasapp/2/projects-img-6.jpg",
+      "assets/images/portfolio/saasapp/2/projects-img-7.jpg"
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "saasapp-3",
+    "image": "assets/images/portfolio/saasapp/3/projects-img-1.jpg",
+    "category": "SAAS APP",
+    "link": "index.html#portfolio-section",
+    "title": "DINING",
+    "pageTitle": "DINING | My Featured Projects",
+    "content": "DINING is a modern online ordering platform designed to enhance the dining experience. It offers features such as reservation for waiting, allowing customers to book a table in advance. Customers can also place orders online, selecting from the menu and submitting their orders directly. Additionally, the platform supports arranging seating and ordering in the restaurant to optimize dining efficiency. Restaurant management is made easy with tools for handling order preparation, billing, and more, ensuring smooth service and an exceptional dining experience.",
+    "role": "UX design, UI design",
+    "tools": "Figma, Illustrator",
+    "collaboration": "Product Team, Research and Development Team",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/saasapp/3/projects-img-2.jpg",
+      "assets/images/portfolio/saasapp/3/projects-img-3.jpg",
+      "assets/images/portfolio/saasapp/3/projects-img-4.jpg",
+      "assets/images/portfolio/saasapp/3/projects-img-5.jpg"
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "saasapp-4",
+    "image": "assets/images/portfolio/saasapp/4/projects-img-1.jpg",
+    "category": "SAAS APP",
+    "link": "index.html#portfolio-section",
+    "title": "Elite Scheduling APP",
+    "pageTitle": "Elite Scheduling APP | My Featured Projects",
+    "content": "Elite Scheduling APP is an efficient scheduling platform designed for both learners and instructors, offering flexible and convenient course arrangement services. Users can easily check course schedules and teacher availability to quickly make reservations. The platform supports real-time scheduling, adjustments, and notifications, enhancing communication between students and teachers. Whether for individual or group classes, the Elite Scheduling APP provides clear, accurate course arrangements and can tailor content based on the learner’s progress, creating a personalized learning experience. It makes learning more efficient and flexible, saving valuable time for students.",
+    "role": "UI design",
+    "tools": "Figma",
+    "collaboration": "Product Team, Research and Development Team",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/saasapp/4/projects-img-2.jpg",
+      "assets/images/portfolio/saasapp/4/projects-img-3.jpg"
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "saasapp-5",
+    "image": "assets/images/portfolio/saasapp/5/projects-img-1.jpg",
+    "category": "SAAS APP",
+    "link": "index.html#portfolio-section",
+    "title": "FMS Factory Management System",
+    "pageTitle": "FMS Factory Management System | My Featured Projects",
+    "content": "FMS Factory Management System is a platform designed to boost factory efficiency, integrating factory management, warehouse management, CRM, and approval management. It provides real-time production line monitoring, helping managers track progress, allocate resources, and improve capacity and efficiency. The warehouse module tracks inventory and material flow, reducing errors and waste. CRM helps manage customer data, track needs, and strengthen sales relationships. The approval management feature streamlines internal processes, improving transparency and efficiency. FMS offers a comprehensive, intelligent management solution for factories",
+    "role": "User Research,UX design,UI design,Prototype design,Frontend Design",
+    "tools": "HTML5, CSS3, jQuery, Figma, Illustrator",
+    "collaboration": "Project Management Team, Manufacturing Team",
+    "flowchart": [
+      "assets/images/portfolio/saasapp/5/projects-img-2.jpg",
+      "assets/images/portfolio/saasapp/5/projects-img-3.jpg"
+    ],
+    "wireframe": [],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/saasapp/5/projects-img-4.jpg",
+      "assets/images/portfolio/saasapp/5/projects-img-5.jpg"
+      
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": ["assets/images/portfolio/saasapp/5/projects-img-6.jpg"],
+    "websiteUrl": "../2020/fms/index.html"
+  },
+  {
+    "id": "saasapp-6",
+    "image": "assets/images/portfolio/saasapp/6/projects-img-1.jpg",
+    "category": "SAAS APP",
+    "link": "index.html#portfolio-section",
+    "title": "ELTA TV APP",
+    "pageTitle": "ELTA TV APP | My Featured Projects",
+    "content": "ELTA TV APP is a multimedia platform offering a wide range of programs, allowing users to watch live and on-demand content from it anytime, anywhere. Whether it’s sports events, variety shows, news, or popular dramas, ELTA TV provides an HD viewing experience. Users can easily browse various programs on their mobile devices and enjoy up-to-date content options. The app also supports features like playback and fast forwarding, ensuring that you never miss any exciting moments. It’s a must-have app for TV enthusiasts.",
+    "role": "UI design",
+    "tools": "Figma,Photoshop",
+    "collaboration": "Project Management Team,Research and Development Team",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/saasapp/6/projects-img-2.jpg",
+      "assets/images/portfolio/saasapp/6/projects-img-3.jpg"
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": [],
+    "websiteUrl": "https://apps.apple.com/tw/app/%E6%84%9B%E7%88%BE%E9%81%94%E9%9B%BB%E8%A6%96/id1086029102"
+  },
+  {
+    "id": "saasapp-7",
+    "image": "assets/images/portfolio/saasapp/7/projects-img-1.jpg",
+    "category": "SAAS APP",
+    "link": "index.html#portfolio-section",
+    "title": "CPBL APP",
+    "pageTitle": "CPBL APP | My Featured Projects",
+    "content": "The CPBL APP is the official application of the Chinese Professional Baseball League, offering users the ability to watch live games, highlights, and replays of CPBL matches anytime and anywhere. Through this platform, users can access real-time game data, player information, and team updates, making it easy to stay updated on every match's progress, whether you're at the stadium or watching remotely. ",
+    "role": "UI design, UX design",
+    "tools": "Figma, Photoshop, Illustrator",
+    "collaboration": "Sports Marketing Team, Development Team",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/saasapp/7/projects-img-2.jpg",
+      "assets/images/portfolio/saasapp/7/projects-img-3.jpg"
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": [],
+    "websiteUrl": "https://apptopia.com/google-play/app/tw.com.cpbl/about"
+  },
   {
     "id": "officialwebsites-1",
     "image": "assets/images/portfolio/officialwebsites/1/projects-img-1.jpg",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "創勢數位科技官網",
-    "pageTitle": "創勢數位科技官網 | My Featured Projects",
-    "content": "創勢數位科技官網 Analyze problems and establish steps to solve problems...",
+    "title": "Chuangshih Digital Technology",
+    "pageTitle": "Chuangshih Digital Technology | My Featured Projects",
+    "content": "Chuangshih Digital Technology focuses on providing comprehensive digital design and development solutions, helping businesses enhance their brand value and online visibility. The company specializes in website design, e-commerce platform development, digital marketing, and system development, tailoring creative and efficient digital strategies based on each client’s needs. With a user-centered approach, Chuangshih Digital Technology utilizes the latest technologies and design trends to help clients establish a strong competitive edge in the digital world.",
     "role": "User Research, UX design, UI design, Frontend Design",
     "tools": "HTML5, CSS3, jQuery, Figma, Photoshop, Illustrator",
     "collaboration": "Marketing Team, Research and Development Team",
@@ -31,10 +192,10 @@
     "image": "assets/images/portfolio/officialwebsites/2/projects-img-1.jpg",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "EDX digital bordless school",
-    "pageTitle": "EDX digital school| My Featured Projects",
-    "content": "edx Analyze problems and establish steps to solve problems...",
-    "role": "UX design, UI design, Prototype design, Frontend Design",
+    "title": "EDX Borderless School",
+    "pageTitle": "EDX Borderless School | My Featured Projects",
+    "content": "EDX Borderless School focuses on online coding education and has developed an app to enhance the learning experience. The app features learning journey management, allowing students to track progress and achievements. Students can share insights and interact with others. The platform includes a school evaluation system for feedback, improving teaching quality. Additionally, the app tracks learning activities, helping students view past and upcoming events to boost motivation.",
+    "role": "UI design, Prototype design, Frontend Design",
     "tools": "HTML5, CSS3, jQuery, Figma, Photoshop, Illustrator",
     "collaboration": "Project Management Team, Research and Development Team",
     "flowchart": ["assets/images/portfolio/officialwebsites/2/projects-img-2.jpg"],
@@ -47,29 +208,370 @@
     ],
     "visualdesign": [],
     "frontenddevelopment": ["assets/images/portfolio/officialwebsites/2/projects-img-2.jpg"],
-    "websiteUrl": "https://www.cyba.org.tw/"
-
+    "websiteUrl": ""
   },
   {
-    "id": "saasapp-4",
-    "image": "assets/images/portfolio/saasapp/4/projects-img-1.jpg",
+    "id": "officialwebsites-3",
+    "image": "assets/images/portfolio/officialwebsites/3/projects-img-1.jpg",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "菁英排課系統",
-    "pageTitle": "菁英排課系統| My Featured Projects",
-    "content": "菁英排課系統 Analyze problems and establish steps to solve problems...",
-    "role": "UI design",
-    "tools": "Figma",
-    "collaboration": "Marketing Team, Research and Development Team",
+    "title": "Arome 香氛購物網站",
+    "pageTitle": "Arome 香氛購物網站 | My Featured Projects",
+    "content": "Arome 香氛購物網站 Analyze problems and establish steps to solve problems...",
+    "role": "UI design, UX design, Frontend Development",
+    "tools": "HTML5, CSS3, jQuery, Figma, Photoshop",
+    "collaboration": "Marketing Team, E-commerce Team",
+    "flowchart": [],
+    "wireframe": ["assets/images/portfolio/officialwebsites/3/projects-img-2.jpg"],
+    "designsystem": ["assets/images/portfolio/officialwebsites/3/projects-img-3.jpg"],
+    "uidesign": [
+      "assets/images/portfolio/officialwebsites/3/projects-img-4.jpg",
+      "assets/images/portfolio/officialwebsites/3/projects-img-5.jpg",
+      "assets/images/portfolio/officialwebsites/3/projects-img-6.jpg"
+    ],
+    "visualdesign": ["assets/images/portfolio/officialwebsites/3/projects-img-7.jpg"],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "officialwebsites-4",
+    "image": "assets/images/portfolio/officialwebsites/4/projects-img-1.jpg",
+    "category": "OFFICIAL WEBSITES",
+    "link": "index.html#portfolio-section",
+    "title": "大英室內設計",
+    "pageTitle": "大英室內設計 | My Featured Projects",
+    "content": "大英室內設計 Analyze problems and establish steps to solve problems...",
+    "role": "UI design, Frontend Development",
+    "tools": "HTML5, CSS3, JavaScript, Figma, Photoshop",
+    "collaboration": "Design Team, Development Team",
     "flowchart": [],
     "wireframe": [],
     "designsystem": [],
     "uidesign": [
-      "assets/images/portfolio/saasapp/4/projects-img-2.jpg",
-      "assets/images/portfolio/saasapp/4/projects-img-3.jpg",
-      "assets/images/portfolio/saasapp/4/projects-img-4.jpg"
+      "assets/images/portfolio/officialwebsites/4/projects-img-2.jpg",
+      "assets/images/portfolio/officialwebsites/4/projects-img-3.jpg",
+      "assets/images/portfolio/officialwebsites/4/projects-img-4.jpg"
+    ],
+    "visualdesign": ["assets/images/portfolio/officialwebsites/4/projects-img-5.jpg"],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "officialwebsites-5",
+    "image": "assets/images/portfolio/officialwebsites/5/projects-img-1.jpg",
+    "category": "OFFICIAL WEBSITES",
+    "link": "index.html#portfolio-section",
+    "title": "華儷假期旅遊網",
+    "pageTitle": "華儷假期旅遊網 | My Featured Projects",
+    "content": "華儷假期旅遊網 Analyze problems and establish steps to solve problems...",
+    "role": "UX design, UI design, Frontend Development",
+    "tools": "HTML5, CSS3, jQuery, Figma, Photoshop",
+    "collaboration": "Marketing Team, Tourism Team",
+    "flowchart": ["assets/images/portfolio/officialwebsites/5/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/officialwebsites/5/projects-img-3.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/officialwebsites/5/projects-img-4.jpg",
+      "assets/images/portfolio/officialwebsites/5/projects-img-5.jpg",
+      "assets/images/portfolio/officialwebsites/5/projects-img-6.jpg"
     ],
     "visualdesign": [],
+    "frontenddevelopment": ["assets/images/portfolio/officialwebsites/5/projects-img-7.jpg"],
+    "websiteUrl": ""
+  },
+  {
+    "id": "officialwebsites-6",
+    "image": "assets/images/portfolio/officialwebsites/6/projects-img-1.jpg",
+    "category": "OFFICIAL WEBSITES",
+    "link": "index.html#portfolio-section",
+    "title": "LEXUS CPO 原廠認證中古車",
+    "pageTitle": "LEXUS CPO 原廠認證中古車 | My Featured Projects",
+    "content": "LEXUS CPO 原廠認證中古車 Analyze problems and establish steps to solve problems...",
+    "role": "UI design, Frontend Development",
+    "tools": "HTML5, CSS3, JavaScript, Figma, Photoshop",
+    "collaboration": "Marketing Team, Automotive Team",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": ["assets/images/portfolio/officialwebsites/6/projects-img-2.jpg"],
+    "uidesign": [
+      "assets/images/portfolio/officialwebsites/6/projects-img-3.jpg",
+      "assets/images/portfolio/officialwebsites/6/projects-img-4.jpg",
+      "assets/images/portfolio/officialwebsites/6/projects-img-5.jpg"
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "officialwebsites-7",
+    "image": "assets/images/portfolio/officialwebsites/7/projects-img-1.jpg",
+    "category": "OFFICIAL WEBSITES",
+    "link": "index.html#portfolio-section",
+    "title": "中華佛教青年會",
+    "pageTitle": "中華佛教青年會 | My Featured Projects",
+    "content": "中華佛教青年會 Analyze problems and establish steps to solve problems...",
+    "role": "UX design, UI design, Frontend Development",
+    "tools": "HTML5, CSS3, jQuery, Figma, Photoshop, Illustrator",
+    "collaboration": "Project Management Team, Non-profit Organization",
+    "flowchart": ["assets/images/portfolio/officialwebsites/7/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/officialwebsites/7/projects-img-3.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/officialwebsites/7/projects-img-4.jpg",
+      "assets/images/portfolio/officialwebsites/7/projects-img-5.jpg",
+      "assets/images/portfolio/officialwebsites/7/projects-img-6.jpg"
+    ],
+    "visualdesign": [],
+    "frontenddevelopment": ["assets/images/portfolio/officialwebsites/7/projects-img-7.jpg"],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-1",
+    "image": "assets/images/portfolio/marketingcampaigns/1/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "樂做南半球藝術新質民",
+    "pageTitle": "樂做南半球藝術新質民 | My Featured Projects",
+    "content": "樂做南半球藝術新質民 Analyze problems and establish steps to solve problems...",
+    "role": "UI design, Visual Design",
+    "tools": "Figma, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, Art Director",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/1/projects-img-2.jpg",
+      "assets/images/portfolio/marketingcampaigns/1/projects-img-3.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/1/projects-img-4.jpg",
+      "assets/images/portfolio/marketingcampaigns/1/projects-img-5.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-2",
+    "image": "assets/images/portfolio/marketingcampaigns/2/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "長榮紳士之夜提案",
+    "pageTitle": "長榮紳士之夜提案 | My Featured Projects",
+    "content": "長榮紳士之夜提案 Analyze problems and establish steps to solve problems...",
+    "role": "UI design, Visual Design, Frontend Development",
+    "tools": "HTML5, CSS3, jQuery, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, Event Planning Team",
+    "flowchart": [],
+    "wireframe": ["assets/images/portfolio/marketingcampaigns/2/projects-img-2.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/2/projects-img-3.jpg",
+      "assets/images/portfolio/marketingcampaigns/2/projects-img-4.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/2/projects-img-5.jpg",
+      "assets/images/portfolio/marketingcampaigns/2/projects-img-6.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-3",
+    "image": "assets/images/portfolio/marketingcampaigns/3/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "在墨爾本 盡情深呼吸",
+    "pageTitle": "在墨爾本 盡情深呼吸 | My Featured Projects",
+    "content": "在墨爾本 盡情深呼吸 Analyze problems and establish steps to solve problems...",
+    "role": "UI design, Visual Design",
+    "tools": "Figma, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, Tourism Board",
+    "flowchart": [],
+    "wireframe": [],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/3/projects-img-2.jpg",
+      "assets/images/portfolio/marketingcampaigns/3/projects-img-3.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/3/projects-img-4.jpg",
+      "assets/images/portfolio/marketingcampaigns/3/projects-img-5.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-4",
+    "image": "assets/images/portfolio/marketingcampaigns/4/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "南方莊園從心出發",
+    "pageTitle": "南方莊園從心出發 | My Featured Projects",
+    "content": "南方莊園從心出發 Analyze problems and establish steps to solve problems...",
+    "role": "UI design, Visual Design, Frontend Development",
+    "tools": "HTML5, CSS3, jQuery, Figma, Photoshop",
+    "collaboration": "Marketing Team, Hospitality Team",
+    "flowchart": [],
+    "wireframe": ["assets/images/portfolio/marketingcampaigns/4/projects-img-2.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/4/projects-img-3.jpg",
+      "assets/images/portfolio/marketingcampaigns/4/projects-img-4.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/4/projects-img-5.jpg",
+      "assets/images/portfolio/marketingcampaigns/4/projects-img-6.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-5",
+    "image": "assets/images/portfolio/marketingcampaigns/5/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "巨匠旅遊-秘境圖書館",
+    "pageTitle": "巨匠旅遊-秘境圖書館 | My Featured Projects",
+    "content": "巨匠旅遊-秘境圖書館 Analyze problems and establish steps to solve problems...",
+    "role": "UX design, UI design, Visual Design",
+    "tools": "Figma, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, Tourism Team",
+    "flowchart": ["assets/images/portfolio/marketingcampaigns/5/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/marketingcampaigns/5/projects-img-3.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/5/projects-img-4.jpg",
+      "assets/images/portfolio/marketingcampaigns/5/projects-img-5.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/5/projects-img-6.jpg",
+      "assets/images/portfolio/marketingcampaigns/5/projects-img-7.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-6",
+    "image": "assets/images/portfolio/marketingcampaigns/6/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "威航！SUPER V 揪團集票",
+    "pageTitle": "威航！SUPER V 揪團集票 | My Featured Projects",
+    "content": "威航！SUPER V 揪團集票 Analyze problems and establish steps to solve problems...",
+    "role": "UI design, Visual Design, Frontend Development",
+    "tools": "HTML5, CSS3, jQuery, Figma, Photoshop",
+    "collaboration": "Marketing Team, Airline Team",
+    "flowchart": [],
+    "wireframe": ["assets/images/portfolio/marketingcampaigns/6/projects-img-2.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/6/projects-img-3.jpg",
+      "assets/images/portfolio/marketingcampaigns/6/projects-img-4.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/6/projects-img-5.jpg",
+      "assets/images/portfolio/marketingcampaigns/6/projects-img-6.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-7",
+    "image": "assets/images/portfolio/marketingcampaigns/7/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "虎航分享自己的青春宣言 手機+實體AR活動",
+    "pageTitle": "虎航分享自己的青春宣言 手機+實體AR活動 | My Featured Projects",
+    "content": "虎航分享自己的青春宣言 手機+實體AR活動 Analyze problems and establish steps to solve problems...",
+    "role": "UX design, UI design, Visual Design",
+    "tools": "Figma, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, AR Development Team",
+    "flowchart": ["assets/images/portfolio/marketingcampaigns/7/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/marketingcampaigns/7/projects-img-3.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/7/projects-img-4.jpg",
+      "assets/images/portfolio/marketingcampaigns/7/projects-img-5.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/7/projects-img-6.jpg",
+      "assets/images/portfolio/marketingcampaigns/7/projects-img-7.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-8",
+    "image": "assets/images/portfolio/marketingcampaigns/8/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "微笑過聖誕 手機版活動提案",
+    "pageTitle": "微笑過聖誕 手機版活動提案 | My Featured Projects",
+    "content": "微笑過聖誕 手機版活動提案 Analyze problems and establish steps to solve problems...",
+    "role": "UX design, UI design, Visual Design",
+    "tools": "Figma, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, AR Development Team",
+    "flowchart": ["assets/images/portfolio/marketingcampaigns/8/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/marketingcampaigns/8/projects-img-3.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/8/projects-img-4.jpg",
+      "assets/images/portfolio/marketingcampaigns/8/projects-img-5.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/8/projects-img-6.jpg",
+      "assets/images/portfolio/marketingcampaigns/8/projects-img-7.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-9",
+    "image": "assets/images/portfolio/marketingcampaigns/9/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "長榮旅行中毒提案",
+    "pageTitle": "長榮旅行中毒提案 | My Featured Projects",
+    "content": "長榮旅行中毒提案 Analyze problems and establish steps to solve problems...",
+    "role": "UX design, UI design, Visual Design",
+    "tools": "Figma, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, AR Development Team",
+    "flowchart": ["assets/images/portfolio/marketingcampaigns/9/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/marketingcampaigns/9/projects-img-3.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/9/projects-img-4.jpg",
+      "assets/images/portfolio/marketingcampaigns/9/projects-img-5.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/9/projects-img-6.jpg",
+      "assets/images/portfolio/marketingcampaigns/9/projects-img-7.jpg"
+    ],
+    "frontenddevelopment": [],
+    "websiteUrl": ""
+  },
+  {
+    "id": "marketingcampaigns-10",
+    "image": "assets/images/portfolio/marketingcampaigns/10/projects-img-1.jpg",
+    "category": "MARKETING CAMPAIGNS",
+    "link": "index.html#portfolio-section",
+    "title": "微笑過聖誕 手機版活動提案",
+    "pageTitle": "微笑過聖誕 手機版活動提案 | My Featured Projects",
+    "content": "微笑過聖誕 手機版活動提案 Analyze problems and establish steps to solve problems...",
+    "role": "UX design, UI design, Visual Design",
+    "tools": "Figma, Photoshop, Illustrator",
+    "collaboration": "Marketing Team, AR Development Team",
+    "flowchart": ["assets/images/portfolio/marketingcampaigns/10/projects-img-2.jpg"],
+    "wireframe": ["assets/images/portfolio/marketingcampaigns/10/projects-img-3.jpg"],
+    "designsystem": [],
+    "uidesign": [
+      "assets/images/portfolio/marketingcampaigns/10/projects-img-4.jpg",
+      "assets/images/portfolio/marketingcampaigns/10/projects-img-5.jpg"
+    ],
+    "visualdesign": [
+      "assets/images/portfolio/marketingcampaigns/10/projects-img-6.jpg",
+      "assets/images/portfolio/marketingcampaigns/10/projects-img-7.jpg"
+    ],
     "frontenddevelopment": [],
     "websiteUrl": ""
   }

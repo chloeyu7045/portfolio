@@ -8,7 +8,8 @@
 
 .banner-section .pattern-layer{
   position: absolute;
-  left: 0px;
+  /*left: 0px;*/
+  right: 0;
   top: 0px;
   width: 100%;
   height: 100%;
@@ -16,7 +17,7 @@
   background-repeat: no-repeat;
   background-position: left center;
   filter: blur(30px);
-  /*animation: blurOpacityAnimation 4s infinite alternate ease-in-out;*/
+
 }
 
 @keyframes blurOpacityAnimation {
