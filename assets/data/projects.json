@@ -24,7 +24,7 @@
   },
   {
     "id": "saasapp-2",
-    "image": "assets/images/portfolio/saasapp/2/projects-img-1.jpg",
+    "image": "",
     "category": "SAAS APP",
     "link": "index.html#portfolio-section",
     "title": "Danshan EScholar",
@@ -38,8 +38,7 @@
     "designsystem": ["assets/images/portfolio/saasapp/2/projects-img-4.jpg"],
     "uidesign": [
       "assets/images/portfolio/saasapp/2/projects-img-5.jpg",
-      "assets/images/portfolio/saasapp/2/projects-img-6.jpg",
-      "assets/images/portfolio/saasapp/2/projects-img-7.jpg"
+      "assets/images/portfolio/saasapp/2/projects-img-6.jpg"
     ],
     "visualdesign": [],
     "frontenddevelopment": [],
@@ -58,12 +57,10 @@
     "collaboration": "Product Team, Research and Development Team",
     "flowchart": [],
     "wireframe": [],
-    "designsystem": [],
+    "designsystem": ["assets/images/portfolio/saasapp/3/projects-img-2.jpg"],
     "uidesign": [
-      "assets/images/portfolio/saasapp/3/projects-img-2.jpg",
       "assets/images/portfolio/saasapp/3/projects-img-3.jpg",
-      "assets/images/portfolio/saasapp/3/projects-img-4.jpg",
-      "assets/images/portfolio/saasapp/3/projects-img-5.jpg"
+      "assets/images/portfolio/saasapp/3/projects-img-4.jpg"
     ],
     "visualdesign": [],
     "frontenddevelopment": [],
@@ -93,7 +90,7 @@
   },
   {
     "id": "saasapp-5",
-    "image": "assets/images/portfolio/saasapp/5/projects-img-1.jpg",
+    "image": "",
     "category": "SAAS APP",
     "link": "index.html#portfolio-section",
     "title": "FMS Factory Management System",
@@ -103,19 +100,18 @@
     "tools": "HTML5, CSS3, jQuery, Figma, Illustrator",
     "collaboration": "Project Management Team, Manufacturing Team",
     "flowchart": [
-      "assets/images/portfolio/saasapp/5/projects-img-2.jpg",
-      "assets/images/portfolio/saasapp/5/projects-img-3.jpg"
+      "assets/images/portfolio/saasapp/5/projects-img-2.jpg"
     ],
-    "wireframe": [],
-    "designsystem": [],
+    "wireframe": ["assets/images/portfolio/saasapp/5/projects-img-3.jpg"],
+    "designsystem": ["assets/images/portfolio/saasapp/5/projects-img-4.jpg"],
     "uidesign": [
-      "assets/images/portfolio/saasapp/5/projects-img-4.jpg",
-      "assets/images/portfolio/saasapp/5/projects-img-5.jpg"
+      "assets/images/portfolio/saasapp/5/projects-img-5.jpg",
+      "assets/images/portfolio/saasapp/5/projects-img-6.jpg"
       
     ],
     "visualdesign": [],
-    "frontenddevelopment": ["assets/images/portfolio/saasapp/5/projects-img-6.jpg"],
-    "websiteUrl": "../2020/fms/index.html"
+    "frontenddevelopment": [],
+    "websiteUrl": ""
   },
   {
     "id": "saasapp-6",
@@ -215,9 +211,9 @@
     "image": "assets/images/portfolio/officialwebsites/3/projects-img-1.jpg",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "Arome 香氛購物網站",
-    "pageTitle": "Arome 香氛購物網站 | My Featured Projects",
-    "content": "Arome 香氛購物網站 Analyze problems and establish steps to solve problems...",
+    "title": "Arome Fragrance Shopping Website",
+    "pageTitle": "Arome Fragrance Shopping Website | My Featured Projects",
+    "content": "Arome is a dedicated shopping platform for fragrance lovers, offering a diverse range of scents for easy selection. The website features a comprehensive online store management system, including order and inventory tracking, sales monitoring, customer relationship management, and promotional campaign settings. Sellers can adjust shipping fees and payment options for seamless transactions. With data analytics and reporting, store owners can track sales trends in real time, optimize strategies, and enhance market competitiveness. Arome ensures a convenient and secure shopping experience, catering to every fragrance enthusiast’s needs.",
     "role": "UI design, UX design, Frontend Development",
     "tools": "HTML5, CSS3, jQuery, Figma, Photoshop",
     "collaboration": "Marketing Team, E-commerce Team",
@@ -238,9 +234,9 @@
     "image": "assets/images/portfolio/officialwebsites/4/projects-img-1.jpg",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "大英室內設計",
-    "pageTitle": "大英室內設計 | My Featured Projects",
-    "content": "大英室內設計 Analyze problems and establish steps to solve problems...",
+    "title": "Daying Interior Design",
+    "pageTitle": "Daying Interior Design | My Featured Projects",
+    "content": "Daying Interior Design specializes in creating unique and comfortable residential and commercial spaces. Combining professional aesthetics with functionality, we tailor ideal environments to meet our clients’ needs. Our experienced design team seamlessly integrates modern styles with personal preferences, ensuring each project maintains both quality and practicality. From space planning and material selection to meticulous execution, we guarantee a refined and efficient design process. Whether for homes, offices, or commercial venues, Daying Interior Design is committed to delivering high-quality spaces with distinctive charm.",
     "role": "UI design, Frontend Development",
     "tools": "HTML5, CSS3, JavaScript, Figma, Photoshop",
     "collaboration": "Design Team, Development Team",
@@ -252,31 +248,31 @@
       "assets/images/portfolio/officialwebsites/4/projects-img-3.jpg",
       "assets/images/portfolio/officialwebsites/4/projects-img-4.jpg"
     ],
-    "visualdesign": ["assets/images/portfolio/officialwebsites/4/projects-img-5.jpg"],
+    "visualdesign": [],
     "frontenddevelopment": [],
-    "websiteUrl": ""
+    "websiteUrl": "https://www.daying-interior.com.tw/about.html"
   },
   {
     "id": "officialwebsites-5",
-    "image": "assets/images/portfolio/officialwebsites/5/projects-img-1.jpg",
+    "image": "",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "華儷假期旅遊網",
-    "pageTitle": "華儷假期旅遊網 | My Featured Projects",
-    "content": "華儷假期旅遊網 Analyze problems and establish steps to solve problems...",
+    "title": "Hwa Li Holidays Travel",
+    "pageTitle": "Hwa Li Holidays Travel Website | My Featured Projects",
+    "content": "Hwa Li Holidays, created in partnership with China Airlines and top travel agencies, offers premium Southeast Asia travel packages for those seeking quality vacations and immersive cultural experiences. Our meticulously planned itineraries allow travelers to uncover the region’s unique charm, from cultural explorations and breathtaking landscapes to luxurious retreats. With Hwa Li Holidays, travel is more than just a journey—it’s a rewarding experience that enriches your life, turning every trip into a treasured memory.",
     "role": "UX design, UI design, Frontend Development",
     "tools": "HTML5, CSS3, jQuery, Figma, Photoshop",
     "collaboration": "Marketing Team, Tourism Team",
-    "flowchart": ["assets/images/portfolio/officialwebsites/5/projects-img-2.jpg"],
-    "wireframe": ["assets/images/portfolio/officialwebsites/5/projects-img-3.jpg"],
+    "flowchart": [],
+    "wireframe": [],
     "designsystem": [],
     "uidesign": [
+      "assets/images/portfolio/officialwebsites/5/projects-img-2.jpg",
       "assets/images/portfolio/officialwebsites/5/projects-img-4.jpg",
-      "assets/images/portfolio/officialwebsites/5/projects-img-5.jpg",
-      "assets/images/portfolio/officialwebsites/5/projects-img-6.jpg"
+      "assets/images/portfolio/officialwebsites/5/projects-img-5.jpg"
     ],
     "visualdesign": [],
-    "frontenddevelopment": ["assets/images/portfolio/officialwebsites/5/projects-img-7.jpg"],
+    "frontenddevelopment": [],
     "websiteUrl": ""
   },
   {
@@ -284,16 +280,17 @@
     "image": "assets/images/portfolio/officialwebsites/6/projects-img-1.jpg",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "LEXUS CPO 原廠認證中古車",
-    "pageTitle": "LEXUS CPO 原廠認證中古車 | My Featured Projects",
-    "content": "LEXUS CPO 原廠認證中古車 Analyze problems and establish steps to solve problems...",
+    "title": "MY CUBA HI",
+    "pageTitle": "MY CUBA HI | My Featured Projects",
+    "content": "MY CUBA HI is a rental and tour booking platform designed for exploring Havana, offering convenient day tours and car rentals for a personalized Cuban adventure. Whether you prefer self-driving through Havana’s vibrant streets or joining guided tours to experience its rich history and culture, MY CUBA HI has you covered. With a variety of vehicle options and flexible rental plans, we ensure a hassle-free journey, allowing you to fully enjoy the warmth and charm of Cuba.",
     "role": "UI design, Frontend Development",
     "tools": "HTML5, CSS3, JavaScript, Figma, Photoshop",
     "collaboration": "Marketing Team, Automotive Team",
     "flowchart": [],
     "wireframe": [],
-    "designsystem": ["assets/images/portfolio/officialwebsites/6/projects-img-2.jpg"],
+    "designsystem": [],
     "uidesign": [
+      "assets/images/portfolio/officialwebsites/6/projects-img-2.jpg",
       "assets/images/portfolio/officialwebsites/6/projects-img-3.jpg",
       "assets/images/portfolio/officialwebsites/6/projects-img-4.jpg",
       "assets/images/portfolio/officialwebsites/6/projects-img-5.jpg"
@@ -304,30 +301,29 @@
   },
   {
     "id": "officialwebsites-7",
-    "image": "assets/images/portfolio/officialwebsites/7/projects-img-1.jpg",
+    "image": "",
     "category": "OFFICIAL WEBSITES",
     "link": "index.html#portfolio-section",
-    "title": "中華佛教青年會",
-    "pageTitle": "中華佛教青年會 | My Featured Projects",
-    "content": "中華佛教青年會 Analyze problems and establish steps to solve problems...",
+    "title": "Chinese Young Buddhist Association ",
+    "pageTitle": "Chinese Young Buddhist Association  | My Featured Projects",
+    "content": "The Chinese Young Buddhist Association is dedicated to promoting Buddhism, fostering spiritual growth among young people, and enhancing social harmony. Through diverse Buddhist courses, meditation retreats, and community service programs, we help youth integrate Buddhist wisdom into modern life. Our platform provides learning resources and networking opportunities, encouraging young individuals to explore their inner selves, cultivate compassion and wisdom, and contribute positively to society. Whether you seek a deeper understanding of Buddhist teachings or a path to inner peace, the Chinese Young Buddhist Association is your ideal companion for growth and practice.",
     "role": "UX design, UI design, Frontend Development",
     "tools": "HTML5, CSS3, jQuery, Figma, Photoshop, Illustrator",
     "collaboration": "Project Management Team, Non-profit Organization",
-    "flowchart": ["assets/images/portfolio/officialwebsites/7/projects-img-2.jpg"],
-    "wireframe": ["assets/images/portfolio/officialwebsites/7/projects-img-3.jpg"],
+    "flowchart": [],
+    "wireframe": [],
     "designsystem": [],
     "uidesign": [
-      "assets/images/portfolio/officialwebsites/7/projects-img-4.jpg",
-      "assets/images/portfolio/officialwebsites/7/projects-img-5.jpg",
-      "assets/images/portfolio/officialwebsites/7/projects-img-6.jpg"
+      "assets/images/portfolio/officialwebsites/7/projects-img-2.jpg",
+      "assets/images/portfolio/officialwebsites/7/projects-img-3.jpg"
     ],
     "visualdesign": [],
-    "frontenddevelopment": ["assets/images/portfolio/officialwebsites/7/projects-img-7.jpg"],
-    "websiteUrl": ""
+    "frontenddevelopment": [""],
+    "websiteUrl": "https://www.cyba.org.tw/"
   },
   {
     "id": "marketingcampaigns-1",
-    "image": "assets/images/portfolio/marketingcampaigns/1/projects-img-1.jpg",
+    "image": "",
     "category": "MARKETING CAMPAIGNS",
     "link": "index.html#portfolio-section",
     "title": "樂做南半球藝術新質民",
