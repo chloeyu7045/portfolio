@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Chloe Yu | My Featured Projects</title>
+    <title>Chloe | My Featured Projects</title>
     <!-- SEO -->
     <meta name="robots" content="noindex">
     <meta name="Description"
@@ -195,7 +195,7 @@
             <div class="outer-container">
                 <div class="content-box">
                     <h3>Hi, I’m <span>Chloe
-                            Yu</span><!-- <img src="assets/images/favicon.png" alt="" style="width: 50px;"> --></h3>
+                            </span></h3>
                     <h2><span class="color-text">Sr. UI/UX Designer</span>
                         <span class="light-text">　&amp; Web developer.</span>
                     </h2>
@@ -1009,7 +1009,41 @@
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  // 假設您的 masonry 布局已初始化為變數 $grid
+  // 通常會在網頁初始化時定義，如:
+  // var $grid = $('.masonry-list').isotope({ ... });
+  
+  // 檢查 URL 是否包含 category 參數
+  if (window.location.hash) {
+    const hash = window.location.hash;
+    if (hash.includes('?category=')) {
+      const parts = hash.split('?category=');
+      const section = parts[0]; // #portfolio-section
+      const category = parts[1]; // officialwebsites
+      
+      // 滾動到作品區域
+      document.querySelector(section).scrollIntoView();
+      
+      // 使用 Isotope 過濾
+      const $grid = $('.masonry-list');
+      $grid.isotope({
+        filter: '.'+category
+      });
+      
+      // 延遲一下再重新布局，確保所有元素都已正確加載
+      setTimeout(function() {
+        $grid.isotope('layout');
+      }, 100);
+    }
+  }
+});
+    </script>
 
+    <script>
+        
+    </script>
 </body><!-- End of .page_wrapper -->
 
 </html>
