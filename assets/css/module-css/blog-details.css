@@ -517,6 +517,7 @@
     border-radius: 20px;
     padding: 41px 20px 38px 20px;
     transition: all 500ms ease;
+    min-height: 282px;
 }
 
 
@@ -603,6 +604,10 @@
 
 .blog-details-content .content-one .text-box p:last-child {
     margin-bottom: 30px;
+}
+
+.blog-details-content .content-two .single-item {
+	min-height: auto;
 }
 
 
