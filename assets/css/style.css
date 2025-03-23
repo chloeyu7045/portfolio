@@ -544,6 +544,25 @@ img {
   --n: 4;
 }
 
+
+.theme-btn-three.prev span {
+    position: relative;
+    padding-left:34px;
+    background: none;
+}
+
+.theme-btn-three.prev:before {
+    position: absolute;
+    content: '\e900';
+    font-family: 'icomoon';
+    font-size: 16px;
+    top: 15px;
+    left: 36px;
+    transition: all 500ms ease;
+    transform: rotate(225deg);
+}
+
+
 .parallax-bg{
   position: absolute;
   left: 0px;

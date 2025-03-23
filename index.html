@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,20 +27,16 @@
     <meta property="og:description"
         content="Hey, I’m Chloe—a Sr. UI/UX & Frontend Designer and Design Manager with 15+ years of experience in crafting smart, data-driven designs. I specialize in B2B SaaS, turning complex AI-powered tools into seamless user experiences. With a background in frontend development, I ensure that every design is both visually compelling and highly functional。" />
     <meta property="og:url" content="http://www.adv-digi.com/works/demo/MyResume/">
-
     <link rel="canonical" href="http://www.adv-digi.com/works/demo/MyResume/" />
     <link rel="alternate" hreflang="zh-Hant" ref="http://www.adv-digi.com/works/demo/MyResume/" />
-
     <!-- Fav Icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
-
     <!-- Stylesheets -->
     <link href="assets/css/font-awesome-all.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
@@ -68,12 +63,8 @@
     <link href="assets/css/module-css/instagram.css" rel="stylesheet">
     <link href="assets/css/module-css/contact.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-
 </head>
-
-
 <!-- page wrapper -->
-
 <body>
     <div class="boxed_wrapper light_bg">
         <!-- mouse-pointer -->
@@ -389,7 +380,7 @@
                                     <li class="filter" data-role="button" data-filter=".saasapp">SAAS / APP</li>
                                     <li class="filter" data-role="button" data-filter=".officialwebsites">OFFICIAL
                                         WEBSITES</li>
-                                    <li class="filter" data-role="button" data-filter=".e-commerce">E-COMMERCE</li>
+                                    <!-- <li class="filter" data-role="button" data-filter=".e-commerce">E-COMMERCE</li> -->
                                     <li class="filter" data-role="button" data-filter=".marketingcampaigns">MARKETING
                                         CAMPAIGNS</li>
                                 </ul>
@@ -400,7 +391,6 @@
                             <!-- 01 SAAS / APP-->
                             <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all saasapp">
                                 <div class="portfolio-block-one mb_40">
-                                    <!-- <a href="projects-details.html?id=saasapp-1" target="_blank"> -->
                                         <div class="inner-box">
                                             <div class="content-box">
                                                 <span class="sub-title-text">SAAS / APP</span>
@@ -471,7 +461,6 @@
                                                 <h2>FMS Factory Management System</h2>
                                                 <p>FMS Factory Management System is a platform designed to boost factory efficiency, integrating...</p>
                                                 <div class="link"><i class="icon-10"></i></div>
-                                                <!-- portfolio/fms/table-datatables.html -->
                                             </div>
                                             <figure class="image-box"><img src="assets/images/portfolio/ap-6.jpg"
                                                     alt=""></figure>
@@ -505,7 +494,6 @@
                                                 <h2>CPBL APP</h2>
                                                 <p>The CPBL APP is the official application of the Chinese Professional Baseball League, offering users the ability...</p>
                                                 <div class="link"><i class="icon-10"></i></div>
-                                                <!-- portfolio/fms/table-datatables.html -->
                                             </div>
                                             <figure class="image-box"><img src="assets/images/portfolio/ap-3.jpg"
                                                     alt=""></figure>
@@ -588,7 +576,6 @@
                                                 <h2>Daying Interior Design</h2>
                                                 <p>Daying Interior Design specializes in creating unique and comfortable residential and commercial spaces.</p>
                                                 <div class="link"><i class="icon-10"></i></div>
-                                                <!-- https://www.daying-interior.com.tw/ -->
                                             </div>
                                             <figure class="image-box"><img src="assets/images/portfolio/ow-7.jpg"
                                                     alt=""></figure>
@@ -1040,10 +1027,116 @@
   }
 });
     </script>
-
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  // 檢查當前 URL 是否包含類別參數
+  function activateFilterFromURL() {
+    const urlParams = new URLSearchParams(window.location.hash.split('?')[1]);
+    const category = urlParams.get('category');
+    
+    if (category) {
+      // 首先移除所有 filter-tabs 中的 active 類別
+      document.querySelectorAll('.filter-tabs .filter').forEach(function(item) {
+        item.classList.remove('active');
+      });
+      
+      // 根據類別參數添加 active 類別
+      let filterSelector;
+      switch(category) {
+        case 'saasapp':
+          filterSelector = '.filter[data-filter=".saasapp"]';
+          break;
+        case 'officialwebsites':
+          filterSelector = '.filter[data-filter=".officialwebsites"]';
+          break;
+        case 'marketingcampaigns':
+          filterSelector = '.filter[data-filter=".marketingcampaigns"]';
+          break;
+        case 'e-commerce':
+          filterSelector = '.filter[data-filter=".e-commerce"]';
+          break;
+        default:
+          filterSelector = '.filter[data-filter=".all"]';
+      }
+      
+      // 激活正確的過濾器
+      const targetFilter = document.querySelector(filterSelector);
+      if (targetFilter) {
+        targetFilter.classList.add('active');
+      }
+      
+      // 如果有過濾功能的話，觸發過濾
+      if (typeof $.fn.isotope !== 'undefined' && $('.masonry-gallery').length > 0) {
+        const filterValue = targetFilter ? targetFilter.getAttribute('data-filter') : '*';
+        $('.masonry-gallery').isotope({ filter: filterValue });
+      }
+    }
+  }
+  
+  // 為 category-list 中的連結添加事件處理
+  document.querySelectorAll('.category-list li a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      // 提取目標類別
+      const href = this.getAttribute('href');
+      if (href.includes('?category=')) {
+        const category = href.split('?category=')[1];
         
+        // 儲存類別資訊到 sessionStorage 以便在頁面跳轉後讀取
+        sessionStorage.setItem('activeCategory', category);
+      } else {
+        // 如果沒有類別參數，預設為 "all"
+        sessionStorage.setItem('activeCategory', 'all');
+      }
+    });
+  });
+  
+  // 如果在 index.html 頁面，並且有存儲的類別，則激活相應過濾器
+  if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
+    const savedCategory = sessionStorage.getItem('activeCategory');
+    
+    if (savedCategory) {
+      // 激活相應的過濾器
+      document.querySelectorAll('.filter-tabs .filter').forEach(function(item) {
+        item.classList.remove('active');
+      });
+      
+      let filterSelector;
+      switch(savedCategory) {
+        case 'saasapp':
+          filterSelector = '.filter[data-filter=".saasapp"]';
+          break;
+        case 'officialwebsites':
+          filterSelector = '.filter[data-filter=".officialwebsites"]';
+          break;
+        case 'marketingcampaigns':
+          filterSelector = '.filter[data-filter=".marketingcampaigns"]';
+          break;
+        case 'e-commerce':
+          filterSelector = '.filter[data-filter=".e-commerce"]';
+          break;
+        default:
+          filterSelector = '.filter[data-filter=".all"]';
+      }
+      
+      const targetFilter = document.querySelector(filterSelector);
+      if (targetFilter) {
+        targetFilter.classList.add('active');
+      }
+      
+      // 如果有過濾功能的話，觸發過濾
+      if (typeof $.fn.isotope !== 'undefined' && $('.masonry-gallery').length > 0) {
+        const filterValue = targetFilter ? targetFilter.getAttribute('data-filter') : '*';
+        $('.masonry-gallery').isotope({ filter: filterValue });
+      }
+      
+      // 清除 sessionStorage 中的類別，避免下次刷新也激活
+      sessionStorage.removeItem('activeCategory');
+    } else {
+      // 檢查 URL 中是否包含類別參數
+      activateFilterFromURL();
+    }
+  }
+});
     </script>
 </body><!-- End of .page_wrapper -->
-
 </html>
