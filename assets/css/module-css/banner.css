@@ -3,7 +3,8 @@
 
 .banner-section{
   position: relative;
-  padding: 8% 0px 8% 0px;
+  padding: 0 0px 8% 0px;
+
 }
 
 .banner-section .pattern-layer{
@@ -16,7 +17,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
-  filter: blur(30px);
+  /*filter: blur(30px);*/
 
 }
 
@@ -41,7 +42,7 @@
 }
 
 .banner-section .outer-container{
-  padding: 0px 110px;
+  padding: 10% 110px 4% 110px;
 }
 
 .banner-section .content-box{
@@ -76,6 +77,7 @@
   font-size: 1.35rem;
   line-height: 1.4;
   opacity: 0.7;
+  color: var(--theme-color-white);
 }
 
 .banner-section .content-box h2{
@@ -86,23 +88,25 @@
   margin-bottom: 28px;
 }
 
-.banner-section .content-box h2 .animation_text_word
-{
+.banner-section .content-box h2 .animation_text_word{
     color: #fff;
     font-size: 60%;
     background: #000;
     display: inline-block!important;
-    padding: 0.5rem 0.75rem;}
+    padding: 0.5rem 0.75rem;
+
+}
 
 .banner-section .content-box h2 .color-text{
   display: block;
   min-height: 130px;
+  color: var(--theme-color-white);
 }
 
 .banner-section .content-box h2 .light-text{
   display: block;
-  /*color: #9E9E9E;*/
-  opacity: .5;
+  color: var(--theme-color-white);
+  opacity: .95;
 }
 
 .banner-section .content-box .lower-box{
