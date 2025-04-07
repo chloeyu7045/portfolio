@@ -1928,13 +1928,15 @@
 
   .banner-section .content-box .lower-box .quote-box .icon-box{
     position: relative;
-    left: 0px;
-    top: 0px;
-    margin-bottom: 20px;
+    left: -60%;
+    margin-bottom: 0px;
   }
+
+
 
   .banner-section .content-box .lower-box .quote-box{
     width: 100%;
+    padding: 0px 24px 20px 24px;
   }
 
   .service-section,
