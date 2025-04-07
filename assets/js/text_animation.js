@@ -7,7 +7,7 @@
 		var animateSpan			= jQuery('.animation_text_word');
 		
 			animateSpan.typed({
-				strings: ["Hi, I’m Chloe,", "Hi, I’m Chloe,", "Hi, I’m Chloe,"],
+				strings: ["Sr. UI/UX Designer", "Web developer"],
 				loop: true,
 				startDelay: 1e3,
 				backDelay: 3e3

@@ -24,8 +24,7 @@
   top:0px;
   width:100%;
   z-index:0;
-  background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.10);*/
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
   -webkit-transition:all 500ms ease;
@@ -61,6 +60,18 @@
 
 .main-header .logo-box .light-logo{
   display: block;
+      display: block;
+    font-size: 22px;
+    padding: 12px 16px;
+    border: 1px solid #fff;
+   
+    margin-right: 20px;
+}
+
+
+.main-header .logo-box .light-logo span{
+   color: #fff;
+
 }
 
 .main-header .logo-box .dark-logo{
