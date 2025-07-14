@@ -76,8 +76,8 @@
 
 
 .banner-section .content-box h4{
-  font-size: 1.35rem;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.8;
   opacity: .85;
   color: var(--theme-color-white);
 }
@@ -271,7 +271,7 @@
 }
 
 .banner-section .content-box .lower-box .quote-box p{
-      font-size: 20px;
+      font-size: 16px;
     line-height: 1.8;
     font-weight: 500;
     color: var(--title-color);
