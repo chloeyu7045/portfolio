@@ -2001,8 +2001,8 @@
 }
 
 .work-page-one-section .filter-tabs li{
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 1.2;
     font-weight: 500;
     color: #000;
     border: solid;
@@ -2019,7 +2019,7 @@
 .work-page-one-section .filter-tabs li:hover{
   color: #fff;
    background: #000;
-   transform: scale(1.15);
+   transform: scale(1.05);
    margin: 0 15px;
 }
 

@@ -27,19 +27,19 @@
 .service-section .left-content .inner-box .text{
   position: relative;
     display: flex;
-    width: 390px;
-    height: 390px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
 }
 
-.service-section .left-content .inner-box .text h3{
-  font-size: 72px;
-  line-height: 60px;
-  font-family: var(--text-font);
-  font-weight: 500;
-  color: var(--theme-color-white);
+.service-section .left-content .inner-box .text h3 {
+    font-size: 56px;
+    line-height: 1.2;
+    font-family: var(--text-font);
+    font-weight: 600;
+    color: var(--theme-color-white);
 }
 
 .service-section .left-content .inner-box .text h3 span{
@@ -87,15 +87,15 @@
 
 .service-section .big-text{
   position: absolute;
-  left: -700px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 290px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.05);
+    left: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.05);
 }
 
 .service-section .right-content{
@@ -123,9 +123,9 @@
 .service-section .right-content .single-item h2{
   position: relative;
   display: block;
-  font-size: 48px;
-  line-height: 48px;
-  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 

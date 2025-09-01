@@ -63,6 +63,7 @@
     <link href="assets/css/module-css/instagram.css" rel="stylesheet">
     <link href="assets/css/module-css/contact.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    
 </head>
 <!-- page wrapper -->
 <body>
@@ -178,15 +179,14 @@
 
         <!-- banner-section -->
         <section class="banner-section" id="chloe">
-            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-            <div class="shape parallax-scene parallax-scene-2 anim-icons">
-
-            </div>
-
+            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.jpg);"></div>
+           <canvas id="canvas"></canvas>
+            <div class="container">
+                <div class="line-middle"></div>
             <div class="outer-container">
                 <div class="content-box">
-                      <h2><span class="color-text">Hi, I’m Chloe</span>
-                        <span class="light-text animation_text_word">Sr. UI/UX Designer &amp; Web developer.</span>
+                      <h2><span class="color-text">Hi, I’m Chloe<br>
+                        Sr. UI/UX Designer &amp; Web developer.</span>
                     </h2>
                     <div class="lower-box">
                         <div class="inner-box">
@@ -201,24 +201,20 @@
                                     </div>
                                     <div class="links-box">
                                         <button type="button" class="theme-btn mr_20 mb_20"
-                                            onclick="location.href='#service-section'"><span>What I Do</span></button>
+                                            onclick="location.href='#portfolio-section'"><span></span>My Featured Projects</button>
                                         <button type="button" class="theme-btn-white mb_20"
-                                            onclick="location.href='#portfolio-section'"><span>My Featured Projects</span></button>    
+                                            onclick="location.href='#service-section'"><span>What I Do</span></button>    
                                         
                                     </div>
                             </div>
                             
                         </div>
-                        <!-- <div class="quote-box">
-                            <div class="icon-box"><i class="icon-2"></i></div>
-                            <p>"擁有超過 15 年智能且以數據為導向的UIUX設計經驗。"</p>
-                             
-                        </div> -->
+                    
+                    </div>
                     </div>
                 </div>
-
-            </div>
-
+                <div class="line-middle"></div>
+            </div>            
 
         </section>
         <!-- banner-section end -->
@@ -708,12 +704,12 @@
                                 </h2>
                             </div>
                         <ul class="clients-list mt_120">                                    
-                            <li><img src="assets/images/software/icon-figma.svg" data-bs-toggle="tooltip"
+                           <li><img src="assets/images/software/icon-figma.svg" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="figma"></li>
-                            <li><img src="assets/images/software/icon-readdy.png" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="readdy"></li>
                             <li><img src="assets/images/software/icon-uxpilot.png" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="readdy"></li>                
+                                    data-bs-placement="top" title="readdy"></li>
+                             <li><img src="assets/images/software/icon-whimsical.png" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="whimsical"></li>        
                             <li><img src="assets/images/software/icon-photoshop.svg" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Photoshop"></li>
                             <li><img src="assets/images/software/icon-illustrator.svg" data-bs-toggle="tooltip"
@@ -735,10 +731,9 @@
                             <li><img src="assets/images/software/icon-figma.svg" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="figma"></li>
                             <li><img src="assets/images/software/icon-uxpilot.png" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="readdy"></li>   
-                            <li><img src="assets/images/software/icon-readdy.png" data-bs-toggle="tooltip"
-                            <li><img src="assets/images/software/icon-readdy.png" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="readdy"></li>           
+                                    data-bs-placement="top" title="readdy"></li>
+                             <li><img src="assets/images/software/icon-whimsical.png" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="whimsical"></li>        
                             <li><img src="assets/images/software/icon-photoshop.svg" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Photoshop"></li>
                             <li><img src="assets/images/software/icon-illustrator.svg" data-bs-toggle="tooltip"
@@ -787,7 +782,7 @@
                                 <div class="single-item">
                                     <div class="year">2021 - Present</div>
                                     <div class="text-box">
-                                        <h3>Design Manager</h3>
+                                        <h3>Senior UI/UX Designer</h3>
                                         <span><a href="https://www.bqool.com" target="_blank">Bqool Inc</a></span>
                                     </div>
                                     <span class="count-text">08</span>
@@ -795,7 +790,7 @@
                                 <div class="single-item">
                                     <div class="year">2020 - 2021</div>
                                     <div class="text-box">
-                                        <h3>Senior UI/UX Designer</h3>
+                                        <h3>UI/UX Designer</h3>
                                         <span>I-Chainwin Technology Co., Ltd</span>
                                     </div>
                                     <span class="count-text">07</span>
@@ -812,7 +807,7 @@
                                 <div class="single-item">
                                     <div class="year">2017 - 2018</div>
                                     <div class="text-box">
-                                        <h3>Senior Web Designerr</h3>
+                                        <h3>Senior Web Designer</h3>
                                         <span><a href="https://www.language-center.com.tw"
                                                 target="_blank">菁英雲教育科技</a></span>
                                     </div>
@@ -966,7 +961,11 @@
     <script src="assets/js/odometer.js"></script>
     <script src="assets/js/gsap.js"></script>
     <script src="assets/js/ScrollTrigger.js"></script>
+    <script src="assets/assets/lib/Z.js"></script>
     <script src="assets/js/SplitText.js"></script>
+    <script src="assets/lib/particle-animation/partical-animation.js"></script>
+    <script src="assets/lib/particle-animation/particles.min.js"></script>
+    <link href="assets/js/animation_herobanner.js" rel="stylesheet">
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>

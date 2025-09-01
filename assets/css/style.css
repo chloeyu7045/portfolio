@@ -399,16 +399,17 @@ img {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  font-size: 20px;
-  line-height: 30px;
+   font-size: 16px;
+  line-height: 1.2;
   font-weight: 500;
   font-family: var(--text-font);
   color: #fff;
   text-align: center;
   border-radius: 40px;
-  padding: 15px 32px;
+  padding: 13px 32px;
   border: solid;
-  border-width: 2px;
+  border-width: 1px;
+  border-color: #fff;
   z-index: 1;
   text-transform: capitalize;
   transition: all 500ms ease;
@@ -417,7 +418,12 @@ img {
 
 .theme-btn:hover{
   transform: scale(1.05);
-  color: #fff;
+  color: #000;
+  border: solid;
+  border-width: 1px;
+  border-color: #000;
+  background: none;
+  box-shadow: none;
 }
 
 .theme-btn.pink{background: #ff5493; color: #fff; border:none;}
@@ -449,27 +455,26 @@ img {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 1.2;
   font-weight: 500;
   font-family: var(--text-font);
-  color: #000;
+  color: #fff;
   text-align: center;
   border-radius: 40px;
-  padding: 15px 32px;
+  padding: 13px 32px;
   border: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #fff;
   z-index: 1;
   text-transform: capitalize;
   transition: all 500ms ease;
-  word-break:keep-all;white-space:nowrap;
-  background: #fff;
-
+  word-break:keep-all;white-space:nowrap;s
 }
 
 .theme-btn-white:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
+  background: #fff;
   color: #000;
 }
 
@@ -666,9 +671,9 @@ img {
 .sec-title h2{
   position: relative;
   display: block;
-  font-size: 90px;
-  line-height: 100px;
-  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 .sec-title h2 span{
@@ -786,11 +791,13 @@ img {
 .hamburger:hover .hamburger__hidden {
   opacity: 1;
   transform: translate(-50%, -50%);
+  background: #fff;
 }
 
 .hamburger:hover .hamburger__hidden::before, .hamburger:hover .hamburger__hidden::after {
   opacity: 1;
   transform: translate(0, 0);
+  background: #fff;
 }
 
 .hamburger__hidden::before {
@@ -1478,10 +1485,10 @@ body.out .mouse-pointer {
 
 .scroll-to-top {
  border-radius: 12px;
-  background-color: #7444FD; /* 或用 var(--theme) 看你設定 */
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  background-color: #ed7d24; /* 或用 var(--theme) 看你設定 */
+  width: 56px;
+  height: 56px;
+  line-height:56px;
   color: #fff; /* 或用 var(--white) */
   font-size: 18px;
   text-align: center;
@@ -1494,6 +1501,7 @@ body.out .mouse-pointer {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
+  border-radius: 36px;
 
 }
 
