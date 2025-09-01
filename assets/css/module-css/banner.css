@@ -47,11 +47,30 @@
   padding: 2% 110px;
 }
 
-.banner-section .content-box{
+.banner-section .content-box {
   position: relative;
   display: block;
-  /*max-width: 1090px;*/
+  
+  /* 初始狀態：透明並向下位移 */
+  opacity: 0;
+  transform: translateY(20px);
+  
+  /* 動畫設定：名稱 fadeUp、時長 0.5s、延遲 0.5s、執行完後保留最後狀態 */
+  animation: fadeUp 1.5s ease-out 0.5s forwards;
 }
+
+/* 定義從透明下移到不透明原位置的關鍵影格 */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .banner-section .content-box h3{
   position: relative;
