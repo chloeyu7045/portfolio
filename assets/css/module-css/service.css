@@ -35,9 +35,9 @@
 }
 
 .service-section .left-content .inner-box .text h3 {
-    font-size: 56px;
+    font-size: 3rem;
     line-height: 1.2;
-    font-family: var(--text-font);
+    font-family: var(--title-font);
     font-weight: 600;
     color: var(--theme-color-white);
 }

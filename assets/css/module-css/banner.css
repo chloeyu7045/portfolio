@@ -3,7 +3,30 @@
 
 .banner-section{
   position: relative;
-  padding:6% 0px;
+  padding: 10% 0px;
+  height: 100vh;
+
+}
+
+
+
+.banner-section::before {
+  content: "With 15+ years of experience in crafting smart, data-driven designs.";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54px;
+    height: 100%;
+    color: #B1B4BA;
+    border-right: 1px solid #B1B4BA;
+    z-index: 999;
+    writing-mode: vertical-lr;
+    display: flex;
+    font-style: 13px!important;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
 
 }
 
@@ -17,7 +40,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /*filter: blur(30px);*/
+
 
 }
 
@@ -95,21 +118,21 @@
 
 
 .banner-section .content-box h4{
-  font-size: 16px;
-  line-height: 1.8;
-  text-align: center;
-  opacity: .85;
+  font-size: 15px;
+  line-height: 2;
+  opacity: .75;
+  font-weight: 300;
   color: var(--theme-color-white);
 }
 
 .banner-section .content-box h2{
   display: block;
-  font-size: 3.75rem;
+  font-size: 6rem;
   line-height:1.2;
   font-weight: 600;
-  text-align: center;
-  margin-bottom: 28px;
-  /*text-shadow: 3px 3px rgb(0 0 0 / 30%);*/
+  margin-bottom: 0;
+  color: var(--theme-color-white);
+  text-transform: uppercase;
 }
 
 .banner-section .content-box h2 .animation_text_word{
@@ -125,7 +148,10 @@
 .banner-section .content-box h2 .color-text{
   display: block;
   min-height: 1.2;
-  color: var(--theme-color-white);
+  background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3C7FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .banner-section .content-box h2 .light-text{
@@ -205,7 +231,7 @@
 }
 
 .links-box:nth-child(2){
-  justify-content:center;
+  justify-content:start;
 }
 
 .links-box:nth-child(2) .social-links{
@@ -2126,6 +2152,10 @@
   background-position: 60% center;
 
 
+}
+
+.banner-section::before {
+  opacity: 0;
 }
 
 }

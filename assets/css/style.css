@@ -81,13 +81,16 @@
   /*--theme-color: #FF6F0F;*/
   --theme-color: #000000;
   --theme-color-2: #2661FF;
+  --theme-color-3: #FFE815;
+  --theme-color-4: #0057FC;
+
   --theme-color-light: #999999;
   --theme-color-white: #ffffff;
   --secondary-color: #000000;
   --text-color: rgba(0,0,0,0.70);
   --title-color: #000000;
   --text-font: 'Satoshi', sans-serif;
-  --title-font: 'Outfit', sans-serif;
+  --title-font: 'Federo', sans-serif;
 }
 
 
@@ -396,25 +399,20 @@ img {
 
 
 .theme-btn{
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-   font-size: 16px;
-  line-height: 1.2;
-  font-weight: 500;
-  font-family: var(--text-font);
-  color: #fff;
-  text-align: center;
-  border-radius: 40px;
-  padding: 13px 32px;
-  border: solid;
-  border-width: 1px;
-  border-color: #fff;
-  z-index: 1;
-  text-transform: capitalize;
-  transition: all 500ms ease;
-  word-break:keep-all;white-space:nowrap;
+    background: var(--theme-color-3);
+    padding: 16px 45px;
+    font-size: 18px;
+    color: var(--tp-heading-color);   
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    transition: transform 0.5s ease;   
+    font-family: var(--title-font);
+
 }
+
 
 .theme-btn:hover{
   transform: scale(1.05);
@@ -422,9 +420,34 @@ img {
   border: solid;
   border-width: 1px;
   border-color: #000;
-  background: none;
-  box-shadow: none;
+
 }
+
+
+
+.theme-btn i{
+    height: 100%;
+    width: 22px;
+    background-color: #E5CF00;
+    position: absolute;
+    bottom: -2px;
+    right: -12px;
+    -moz-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    transform: rotate(13deg);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.theme-btn:hover i{
+  opacity: 0;
+}
+
 
 .theme-btn.pink{background: #ff5493; color: #fff; border:none;}
 .theme-btn.pink:hover{background: #fff; color: #ff5493;}
@@ -452,30 +475,45 @@ img {
   transform: rotate(135deg);
 }
 .theme-btn-white{
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 500;
-  font-family: var(--text-font);
-  color: #fff;
-  text-align: center;
-  border-radius: 40px;
-  padding: 13px 32px;
-  border: solid;
-  border-width: 1px;
-  border-color: #fff;
-  z-index: 1;
-  text-transform: capitalize;
-  transition: all 500ms ease;
-  word-break:keep-all;white-space:nowrap;s
+    background: var(--theme-color-4);
+    padding: 16px 45px;
+    font-size: 18px;
+    font-family: var(--title-font);
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;   
+}
+
+.theme-btn-white i{
+   height: 100%;
+    width: 22px;
+    background-color: #0f55d9;
+    position: absolute;
+    bottom: -2px;
+    right: -12px;
+    -moz-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    transform: rotate(13deg);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
 }
 
 .theme-btn-white:hover{
   transform: scale(1.1);
-  background: #fff;
-  color: #000;
+  
+}
+
+.theme-btn-white:hover i{
+  opacity: 0;
 }
 
 .theme-btn-white span{
@@ -671,9 +709,10 @@ img {
 .sec-title h2{
   position: relative;
   display: block;
-  font-size: 64px;
+  font-size: 4.75rem;
   line-height: 1.2;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .sec-title h2 span{
@@ -1485,7 +1524,7 @@ body.out .mouse-pointer {
 
 .scroll-to-top {
  border-radius: 12px;
-  background-color: #ed7d24; /* 或用 var(--theme) 看你設定 */
+ background: var(--theme-color-4);
   width: 56px;
   height: 56px;
   line-height:56px;
@@ -1501,7 +1540,7 @@ body.out .mouse-pointer {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
-  border-radius: 36px;
+  border-radius: 6px;
 
 }
 
